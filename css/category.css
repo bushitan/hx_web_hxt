@@ -1,0 +1,25 @@
+
+.category {
+    padding: 20px 0 0
+}
+
+.category .title{
+    float: left;
+    line-height: 42px;
+    font-size: 2em;
+    font-weight: bolder;
+}
+.category .sub_title{
+    text-align: left;
+}
+.category .sub_title a{
+    /*float: left;*/
+    line-height: 42px;
+    font-size: 1em;
+    padding:0 10px;
+}
+/*.category .select {*/
+    /*font-weight: bolder;*/
+    /*color: #f6ab00;*/
+/*}*/
+
