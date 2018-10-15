@@ -1,12 +1,12 @@
 
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, textarea, tfoot, th, thead, time, tr, tt, u, ul, var, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
+     margin: 0; 
+     padding: 0; 
+    border: 0; 
 }
 a, img {
-    outline: 0;
-    color: #000 ;
+     outline: 0; 
+     color: #000; 
 }
 .btns:hover, .btns_info:hover, a {
     text-decoration: none;
@@ -17,7 +17,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #f0f3ef ;
-    font-family: Arial,'Hiragino Sans GB',"Microsoft Yahei","Î¢ÈíÑÅºÚ",Tahoma,Helvetica,STHeiti;
+    font-family: Arial,'Hiragino Sans GB',"Microsoft Yahei","Î¢ï¿½ï¿½ï¿½Åºï¿½",Tahoma,Helvetica,STHeiti;
 }
 .xx_bg_white{    background-color: #fff;}
 .xx_bg_yellow{   background-color:#f6ab00 ; }

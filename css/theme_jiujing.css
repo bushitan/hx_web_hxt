@@ -1,9 +1,15 @@
 
 
+/* .skin_logo{
+    background:url("../img/logo.png");
+    border:1px solid #ffffff;
+    background-size:cover;
+    width:220px;
+    height:54px;
+} */
 
 
-
-/*ËÑË÷¿ò*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 .skin_search_input{
     /*border: 2px solid #f6ab00;*/
 
@@ -29,7 +35,7 @@
     background: cornflowerblue;
 }
 
-/*tab²Ëµ¥À¸ÑÕÉ«*/
+/*tabï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½É«*/
 .skin_tab_title{
     width: 220px;
     line-height: 42px;
@@ -40,7 +46,7 @@
     background: cornflowerblue;
 }
 
-/*¹ö¶¯Ìõ×ó²à²Ëµ¥£¬Êó±êÒÆ¶¯Ö®ºó±äÉ«*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½Ö®ï¿½ï¿½ï¿½É«*/
 
 .skin_swiper_node{
     position: relative;
@@ -68,7 +74,7 @@
     color: #fff !important;
 }
 
-    /*µÇÂ½°´Å¥ÑÕÉ«*/
+    /*ï¿½ï¿½Â½ï¿½ï¿½Å¥ï¿½ï¿½É«*/
 .skin_login,.skin_register{
     display: inline-block;
     width: 103px;
@@ -93,7 +99,7 @@
 }
 
 
-/*Ä¿Â¼Ñ¡ÔñÑÕÉ«*/
+/*Ä¿Â¼Ñ¡ï¿½ï¿½ï¿½ï¿½É«*/
 .skin_category_select{
     font-weight: bolder;
     /*color: #f6ab00;*/

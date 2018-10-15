@@ -1,5 +1,6 @@
 
 .category {
+    margin-top:20px;
     padding: 20px 0 0
 }
 
@@ -9,6 +10,13 @@
     font-size: 2em;
     font-weight: bolder;
 }
+.category a{
+    /*float: left;*/
+    line-height: 42px;
+/*     font-size: 1em; */
+    padding:0 10px; 
+}
+
 .category .sub_title{
     text-align: left;
 }
