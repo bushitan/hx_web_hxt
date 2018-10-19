@@ -4,7 +4,7 @@
     margin-top: 20px;
 }
 
-/*ÆÕÍ¨Ä£¿é*/
+/*ï¿½ï¿½Í¨Ä£ï¿½ï¿½*/
 .news  .title{
     line-height: 26px;
     font-size: 1em;
@@ -14,7 +14,28 @@
 }
 
 
-/*ÈÈµãÐÂÎÅ*/
+.news .sub_nav{
+    height: 88px;
+    /*     line-height:44px; */
+/*        border:1px #eee solid; */
+/*     border: 1 solid; */
+}
+.news .sub_nav_title{
+    text-align:center;
+    font-size:1em;
+    line-height:54px;
+/*     line-height: 88px; */
+}
+
+.news .sub_nav_content{
+    font-size:0.75em;
+    height:34px;
+    text-align:center;
+    
+}
+
+
+/*ï¿½Èµï¿½ï¿½ï¿½ï¿½ï¿½*/
 /*.news .t_hot{*/
 
 /*}*/
@@ -29,7 +50,7 @@
 
 
 
-/*½»Ò×Ä£¿é*/
+/*ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½*/
 .news .trade .title{
     padding: 15px 15px 0;
     font-size: 0.8em;
@@ -85,10 +106,10 @@
 
 
 .news .content{
-    width: 100%;
-    height: 25px;
-    font-size: 0.75em;
-    line-height: 25px;
+    /* width: 100%; */
+    /* height: 25px; */
+    /* font-size: 0.75em; */
+    /* line-height: 25px; */
 }
 
 .news .content label{
@@ -102,7 +123,7 @@
     float: right;
 }
 
-/*ÖÐ¼äÀ¸*/
+/*ï¿½Ð¼ï¿½ï¿½ï¿½*/
 .news .t_hot .title{
     line-height: 30px;
     padding:2px 0 8px;

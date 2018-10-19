@@ -22,6 +22,9 @@ body{
 .xx_bg_white{    background-color: #fff;}
 .xx_bg_yellow{   background-color:#f6ab00 ; }
 .xx_bg_blue{   background-color:dodgerblue ; }
+.xx_bg_body{   background-color: #f0f3ef ; }
+.xx_bg_888{   background-color: #888 ; }
+
 
 
 .xx_pd_15{    padding:15px;}
@@ -33,6 +36,7 @@ body{
 .xx_mar_auto{    margin: auto;}
 .xx_mar_20{    margin: 20px;}
 .xx_mar_lr_20{    margin: 0 20px;}
+.xx_mar_r_10{    margin-right: 10px;}
 .xx_mar_r_20{    margin-right: 20px;}
 .xx_mar_r_40{    margin-right: 40px;}
 .xx_mar_t_20{    margin-top: 20px;}
@@ -47,6 +51,7 @@ body{
 .xx_w_380{    width: 380px;}
 .xx_w_360{    width: 360px;}
 .xx_w_280{    width: 280px;}
+.xx_w_160{    width: 150px;}
 .xx_w_100{    width: 100px;}
 .xx_h_206{    height: 206px;}
 .xx_h_120{    height: 120px;}
