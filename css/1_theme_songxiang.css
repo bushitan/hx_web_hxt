@@ -1,4 +1,4 @@
-﻿
+
 
 /* .skin_logo{
     background:url("../img/logo.png");
@@ -15,6 +15,7 @@
 
     width: 420px;
     line-height: 36px;
+    height: 34px;
     padding: 0 10px;
     margin-left: 120px;
     outline: none;
@@ -93,7 +94,7 @@
     border-radius: 5px;
 }
 .skin_register{
-    /*color: #f6ab00;*/
+    color: #f6ab00;
     /*background-color: #f6ab00;*/
     border-radius: 5px;
 }
