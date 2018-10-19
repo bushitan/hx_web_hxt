@@ -125,6 +125,7 @@
 
 /*�м���*/
 .news .t_hot .title{
+    height:90px;
     line-height: 30px;
     padding:2px 0 8px;
 }

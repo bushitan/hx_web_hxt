@@ -1,0 +1,843 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta name="viewport" content="width=1280,initial-scale=0.27" />
+    <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
+    <title>华讯松香网首页</title>
+
+    <!--<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">-->
+
+    <!--pure-min.css-->
+        <link rel="stylesheet" href="css/pure-min.css">
+
+    <!--[if lte IE 8]>
+        <!--<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">-->
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <!--<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">-->
+    <!--<![endif]-->
+
+
+        <!--[if lte IE 8]>
+            <!--<link rel="stylesheet" href="https://purecss.io/combo/1.18.13?/css/layouts/blog-old-ie.css">-->
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <!--<link rel="stylesheet" href="https://purecss.io/combo/1.18.13?/css/layouts/blog.css">-->
+        <!--<![endif]-->
+
+    <link rel="stylesheet" href="css/xx.css">
+    <link rel="stylesheet" href="css/1_theme_songxiang.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/tab.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/ad.css">
+    <link rel="stylesheet" href="css/summary.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/trade.css">
+
+    <!-- 首先引入jQuery和unslider -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/unslider.min.js"></script>
+    <!-- <script src="http://www.jq22.com/demo/unslider-150203225543/jquery-1.11.1.min.js"></script>-->
+    <!-- <script src="http://www.jq22.com/demo/unslider-150203225543/unslider.min.js"></script>-->
+    <!--[if lt IE 9]>
+        <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>-->
+    <![endif]-->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-41480445-1', 'purecss.io');
+    ga('send', 'pageview');
+
+        $(document).ready(function(e) {
+            var unslider04 = $('#hot').unslider({
+                dots: true
+            }),
+            data04 = unslider04.data('unslider');
+//            $('.unslider-arrow04').click(function() {
+//                var fn = this.className.split(' ')[1];
+//                data04[fn]();
+//            });
+
+            var unsliderad = $('#ad').unslider({
+                dots: true
+            }),
+            dataad = unsliderad.data('unslider');
+//            $('.unslider-arrow04').click(function() {
+//                var fn = this.className.split(' ')[1];
+//                data04[fn]();
+//            });
+        });
+    </script>
+</head>
+<body>
+
+<!--     头部 -->
+    <div class="header pure-g ">
+        <div class="xx_mar_auto xx_w_1180">
+            <div class="pure-u-1 menu_list">
+                 <div class="node touch">
+                    English
+                    <ul class="header_help">
+                        <li>
+                            <a href="javascript:;">
+                                한글
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                中文
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="node touch">
+                    客户服务
+                    <ul class="header_help">
+                        <li>
+                            <a href="javascript:;">
+                                帮助说明：
+                            </a>
+                            <a href="" target="_blank" class="contact">
+                                帮助中心
+                            </a>
+                            &nbsp;
+                            <a href="" target="_blank" class="contact">
+                                新手指南
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                在线客服：
+                            </a>
+                            <a href="javascript:;" id="toolbar-toptell" class="contact">
+                                联系在线客服
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                客服热线：0771-5553301 （8:30-17:30）
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" node">|</div>
+                <a class=" node" href="">我的设置</a>
+                <a class=" node" href="">APP</a>
+                <a class=" node" href="">小程序</a>
+            </div>
+        </div>
+    </div>
+
+<!-- 搜索 -->
+<!--2 搜索框-->
+    <div class="search  xx_bg_white pure-g">
+        <div class="xx_mar_auto xx_w_1180">
+            <div class="pure-u-1-3  logo">
+                <img src="img/logo.png" alt="" width="100%" height="100%">
+            </div>
+            <div class="pure-u-1-3 tool ">
+                <div class="pure-g ">
+                    <input class="skin_search_input pure-u-1-2" type="text" placeholder="请输入类别 产地等搜索，例如：马尾松 广西" id="globalSearchInput" ref="globalSearchInput" maxlength="100">
+                    <button class="skin_search_btn pure-u-1-2" onclick="">搜索</button>
+                </div>
+            </div>
+            <div class="pure-u-1-3  qr">
+                <div class="title">小程序</div>
+                <img src="img/ewm.png" alt=""  width="70" height="70">
+                <div class="qr_large">
+                    扫码打开
+                    <br> 华讯生物圈小程序
+                        <img src="img/ewm.png" width="130" height="130">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- tab菜单 -->
+    <div class="tab xx_bg_white pure-g">
+        <div class="xx_mar_auto xx_w_1180">
+            <div class="pure-u-1-2 skin_tab_title"> 所有服务分类</div>
+            <div class="pure-u-1-2 xx_w_960">
+                <a class="node" href="#jy">首页</a>
+                <a class="node" href="#jy">松香网</a>
+                <a class="node" href="#jy">活性炭网</a>
+                <a class="node" href="#jy">酒精网</a>
+                <a class="node" href="#jy">糠醛网</a>
+                <a class="node" href="#jy">蓖麻油网</a>
+                <a class="node" href="#jy">桐油网</a>
+                <a class="node" href="#jy">香料网</a>
+                <a class="node" href="#jy">共享实验室</a>
+                <a class="node" href="#jy">技术转移中心</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="news  pure-g ">
+        <div class="xx_mar_auto xx_w_1180 xx_bg_body">
+            <div class="pure-u-1-3 xx_w_280 xx_h_206  xx_bg_white">
+                <div class="xx_pd_15">
+                         2018年的国际国内经济环境错综复杂，国际上，贸易保护主义抬头，贸易摩擦加剧，金融市场动荡不安；国内经济虽然稳中向好，但仍存在较大的下行压力，汇率波动大，债务风险凸显，杠杆率居高不下，
+                         经济刺激政策空间有限。
+                </div>
+            </div>
+            <div class="pure-u-1-3 xx_w_580 xx_h_206 xx_mar_lr_20 t_hot xx_bg_white">
+                <div class="xx_pd_15">
+                    <div class=" pure-g">
+                        <div class="sub_nav pure-u-1-4    ">
+                            <div class="sub_nav_title">供求</div>
+                            <div class="sub_nav_content">
+                                <div class="pure-g ">
+                                    <a class="pure-u-1-3" href="#jy">会员</a>
+                                    <a class="pure-u-1-3" href="#jy">交易</a>
+                                    <a class="pure-u-1-3" href="#jy">专利</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sub_nav pure-u-1-4  xx_bg_yellow  ">
+                            <div class="sub_nav_title">企业</div>
+                            <div class="sub_nav_content">
+                                <div class="pure-g ">
+                                    <a class="pure-u-1-3" href="#jy">会员</a>
+                                    <a class="pure-u-1-3" href="#jy">交易</a>
+                                    <a class="pure-u-1-3" href="#jy">专利</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub_nav pure-u-1-4    ">
+                            <div class="sub_nav_title">供求</div>
+                            <div class="sub_nav_content">
+                                <div class="pure-g ">
+                                    <a class="pure-u-1-3" href="#jy">会员</a>
+                                    <a class="pure-u-1-3" href="#jy">交易</a>
+                                    <a class="pure-u-1-3" href="#jy">专利</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub_nav pure-u-1-4   xx_bg_yellow ">
+                            <div class="sub_nav_title">产品</div>
+                            <div class="sub_nav_content">
+                                <div class="pure-g ">
+                                    <a class="pure-u-1-3" href="#jy">会员</a>
+                                    <a class="pure-u-1-3" href="#jy">交易</a>
+                                    <a class="pure-u-1-3" href="#jy">专利</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" pure-g">
+
+                        <div class="sub_nav pure-u-1-4    xx_bg_yellow">
+                            <div class="sub_nav_title">行情</div>
+                            <div class="sub_nav_content">
+                                <div class="pure-g ">
+                                    <a class="pure-u-1-3" href="#jy">会员</a>
+                                    <a class="pure-u-1-3" href="#jy">交易</a>
+                                    <a class="pure-u-1-3" href="#jy">专利</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sub_nav pure-u-1-4    ">
+                            <div class="sub_nav_title">分析</div>
+                            <div class="sub_nav_content">
+                                <div class="pure-g ">
+                                    <a class="pure-u-1-3" href="#jy">会员</a>
+                                    <a class="pure-u-1-3" href="#jy">交易</a>
+                                    <a class="pure-u-1-3" href="#jy">专利</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub_nav pure-u-1-4   xx_bg_yellow ">
+                            <div class="sub_nav_title">数据</div>
+                            <div class="sub_nav_content">
+                                <div class="pure-g ">
+                                    <a class="pure-u-1-3" href="#jy">会员</a>
+                                    <a class="pure-u-1-3" href="#jy">交易</a>
+                                    <a class="pure-u-1-3" href="#jy">专利</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub_nav pure-u-1-4    ">
+                            <div class="sub_nav_title">待定</div>
+                            <div class="sub_nav_content">
+                                <div class="pure-g ">
+                                    <a class="pure-u-1-3" href="#jy">会员</a>
+                                    <a class="pure-u-1-3" href="#jy">交易</a>
+                                    <a class="pure-u-1-3" href="#jy">专利</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pure-u-1-3 xx_w_280 xx_h_206 xx_bg_white">
+                <div class="xx_pd_15">
+                    <img src="img/zhishu.png" width="100%" height="176">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--6 目录-->
+    <div class="category  pure-g xx_border_gray ">
+        <div class="xx_mar_auto xx_w_1180">
+            <div class="pure-u-1-1  ">
+                  <a href="" class="title">频道</a>
+                  <a href="" class="select">松脂</a>
+                  <a href="">松香</a>
+                  <a href="">松节油</a>
+                  <a href="">松香深加工</a>
+                  <a href="">松节油深加工</a>
+            </div>
+        </div>
+    </div>
+    <div class="news  pure-g ">
+        <div class="trade xx_mar_auto xx_w_1180">
+           <div class="pure-u-1-2 xx_w_380 xx_h_206 xx_mar_r_20  xx_bg_white">
+                <div class="xx_pd_15">
+                    <img src="img/zhishu.png" width="100%" height="176">
+                </div>
+            </div>
+            <div class="pure-u-1-2 xx_mar_auto  xx_w_780 xx_h_206 xx_bg_white">
+            <div class="title pure-g ">
+                <div class="pure-u-1-8">产品名</div>
+                <div class="pure-u-1-8">产地</div>
+                <div class="pure-u-1-8">交货地</div>
+                <div class="pure-u-1-8">区间价</div>
+                <div class="pure-u-1-8">涨跌</div>
+                <div class="pure-u-1-8">涨跌量</div>
+                <div class="pure-u-1-8">发布日期</div>
+                <div class="pure-u-1-8">走势图</div>
+            </div>
+            <div class="content pure-g ">
+                <div class="pure-u-1-8">福建马尾松松香</div>
+                <div class="pure-u-1-8">福建</div>
+                <div class="pure-u-1-8">福建</div>
+                <div class="pure-u-1-8">12400-12400</div>
+                <div class="pure-u-1-8">--</div>
+                <div class="pure-u-1-8">0.0</div>
+                <div class="pure-u-1-8">18-04-13</div>
+                <div class="pure-u-1-8">价格走势</div>
+            </div>
+            <div class="content pure-g ">
+                <div class="pure-u-1-8">福建马尾松松香</div>
+                <div class="pure-u-1-8">福建</div>
+                <div class="pure-u-1-8">福建</div>
+                <div class="pure-u-1-8">12400-12400</div>
+                <div class="pure-u-1-8">--</div>
+                <div class="pure-u-1-8">0.0</div>
+                <div class="pure-u-1-8">18-04-13</div>
+                <div class="pure-u-1-8">价格走势</div>
+            </div>
+            <div class="content pure-g ">
+                <div class="pure-u-1-8">福建马尾松松香</div>
+                <div class="pure-u-1-8">福建</div>
+                <div class="pure-u-1-8">福建</div>
+                <div class="pure-u-1-8">12400-12400</div>
+                <div class="pure-u-1-8">--</div>
+                <div class="pure-u-1-8">0.0</div>
+                <div class="pure-u-1-8">18-04-13</div>
+                <div class="pure-u-1-8">价格走势</div>
+            </div>
+            <div class="content pure-g ">
+                <div class="pure-u-1-8">福建马尾松松香</div>
+                <div class="pure-u-1-8">福建</div>
+                <div class="pure-u-1-8">福建</div>
+                <div class="pure-u-1-8">12400-12400</div>
+                <div class="pure-u-1-8">--</div>
+                <div class="pure-u-1-8">0.0</div>
+                <div class="pure-u-1-8">18-04-13</div>
+                <div class="pure-u-1-8">价格走势</div>
+            </div>
+            <div class="content pure-g ">
+                <div class="pure-u-1-8">福建马尾松松香</div>
+                <div class="pure-u-1-8">福建</div>
+                <div class="pure-u-1-8">昆明站台</div>
+                <div class="pure-u-1-8">12400-12400</div>
+                <div class="pure-u-1-8">--</div>
+                <div class="pure-u-1-8">0.0</div>
+                <div class="pure-u-1-8">18-04-13</div>
+                <div class="pure-u-1-8">价格走势</div>
+            </div>
+            <div class="content pure-g ">
+                <div class="pure-u-1-8">福建马尾松松香</div>
+                <div class="pure-u-1-8">福建</div>
+                <div class="pure-u-1-8">福建</div>
+                <div class="pure-u-1-8">12400-12400</div>
+                <div class="pure-u-1-8">--</div>
+                <div class="pure-u-1-8">0.0</div>
+                <div class="pure-u-1-8">18-04-13</div>
+                <div class="pure-u-1-8">价格走势</div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+
+    <!--6 目录-->
+    <div class="category  pure-g xx_border_gray ">
+        <div class="xx_mar_auto xx_w_1180">
+            <div class="pure-u-1-1  ">
+                  <a href="" class="title">行情</a>
+            </div>
+        </div>
+    </div>
+<div class="news  pure-g xx_mar_t_20">
+        <div class="xx_mar_auto xx_w_1180 ">
+            <div class="pure-u-1-3 xx_w_380 xx_h_206  xx_bg_white">
+                <div class="xx_pd_15">
+                     <div class="title">
+                         <span class="select">行情速递</span>
+                     </div>
+                     <div class="content">
+                         <label>[价格]4月14日松香21价格价格]4月14日松香21表 </label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label>[价格]4月14日松香21价格价格]4月14日松香21表 </label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label>[价格]4月14日松香21价格价格]4月14日松香21表 </label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label>[价格]4月14日松香21价格价格]4月14日松香21表 </label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label>[价格]4月14日松香21价格价格]4月14日松香21表 </label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label>[价格]4月14日松香21价格价格]4月14日松香21表 </label>
+                         <span>04-12</span>
+                     </div>
+                </div>
+            </div>
+            <div class="pure-u-1-3 xx_w_380 xx_h_206 xx_mar_lr_20 xx_bg_white">
+                <div class="xx_pd_15">
+                    <div class="title">
+                         <span class="select">商家论市</span>
+                    </div>
+                     <div class="content">
+                         <label>[价格]4月14日松香21价格价格]4月14日松香21表 </label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label>[价格]4月14日松香21价格价格]4月14日松香21表 </label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label>[价格]4月14日松香21价格价格]4月14日松香21表 </label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label>[价格]4月14日松香21价格价格]4月14日松香21表 </label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label>[价格]4月14日松香21价格价格]4月14日松香21表 </label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label>[价格]4月14日松香21价格价格]4月14日松香21表 </label>
+                         <span>04-12</span>
+                     </div>
+                </div>
+            </div>
+            <div class="pure-u-1-3 xx_w_380 xx_h_206  xx_bg_white">
+                <div class="xx_pd_15">
+                    <img src="img/yk_3.jpg" width="100%" height="176">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--6 目录-->
+    <div class="category  pure-g xx_border_gray ">
+        <div class="xx_mar_auto xx_w_1180">
+            <div class="pure-u-1-1  ">
+                  <a href="" class="title">评述分析</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="news  pure-g xx_mar_t_20">
+        <div class="xx_mar_auto xx_w_1180">
+            <div class="pure-u-1-3 xx_w_380 xx_h_206  xx_bg_white">
+                <div class="xx_pd_15">
+                     <div class="title">
+                         <span class="select">周评</span>
+                     </div>
+                     <div class="content">
+                         <label>[价格]4月14日松香21价格价格]4月14日松香21表 </label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label>[价格]4月14日松香21价格价格]4月14日松香21表 </label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label>[价格]4月14日松香21价格价格]4月14日松香21表 </label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label>[价格]4月14日松香21价格价格]4月14日松香21表 </label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label>[价格]4月14日松香21价格价格]4月14日松香21表 </label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label>[价格]4月14日松香21价格价格]4月14日松香21表 </label>
+                         <span>04-12</span>
+                     </div>
+                </div>
+            </div>
+            <div class="pure-u-1-3 xx_w_380 xx_h_206 xx_mar_lr_20 xx_bg_white">
+                <div class="xx_pd_15">
+                    <div class="title">
+                         <span class="select">观察分析</span>
+                    </div>
+                     <div class="content">
+                         <label>[价格]4月14日松香21价格价格]4月14日松香21表 </label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label>[价格]4月14日松香21价格价格]4月14日松香21表 </label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label>[价格]4月14日松香21价格价格]4月14日松香21表 </label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label>[价格]4月14日松香21价格价格]4月14日松香21表 </label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label>[价格]4月14日松香21价格价格]4月14日松香21表 </label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label>[价格]4月14日松香21价格价格]4月14日松香21表 </label>
+                         <span>04-12</span>
+                     </div>
+                </div>
+            </div>
+            <div class="pure-u-1-3 xx_w_380 xx_h_206  xx_bg_white">
+                <div class="xx_pd_15">
+                    <img src="img/yk_3.jpg" width="100%" height="176">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="category  pure-g xx_border_gray ">
+        <div class="xx_mar_auto xx_w_1180">
+            <div class="pure-u-1-1  ">
+                  <a href="" class="title">数据</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="news  pure-g xx_mar_t_20">
+        <div class="xx_mar_auto xx_w_1180">
+            <div class="pure-u-1-3 xx_w_380 xx_h_206  xx_bg_white">
+                <div class="xx_pd_15">
+                     <div class="title">
+                         <span class="select">松节油出口数据</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                </div>
+            </div>
+            <div class="pure-u-1-3 xx_w_380 xx_h_206  xx_bg_white xx_mar_lr_20">
+                <div class="xx_pd_15">
+                     <div class="title">
+                         <span class="select">松节油出口情况数据</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                </div>
+            </div>
+            <div class="pure-u-1-3 xx_w_380 xx_h_206  xx_bg_white">
+                <div class="xx_pd_15">
+                    <div class="title">
+                         <span class="select"> 松节油进口数据</span>
+                    </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="news  pure-g xx_mar_t_20">
+        <div class="xx_mar_auto xx_w_1180">
+            <div class="pure-u-1-3 xx_w_380 xx_h_206  xx_bg_white">
+                <div class="xx_pd_15">
+                     <div class="title">
+                         <span class="select">库存数据</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                </div>
+            </div>
+            <div class="pure-u-1-3 xx_w_380 xx_h_206  xx_bg_white xx_mar_lr_20">
+                <div class="xx_pd_15">
+                     <div class="title">
+                         <span class="select">其他数据</span>
+                         <span >松节油产品 </span>
+                         <span >石油树脂</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                </div>
+            </div>
+            <div class="pure-u-1-3 xx_w_380 xx_h_206  xx_bg_white">
+                <div class="xx_pd_15">
+                    <div class="title">
+                         <span class="select">相关行业</span>
+                    </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+  <!--底部-->
+    <div class="footer  pure-g xx_mar_t_20 xx_border_gray">
+        <div class="xx_mar_auto pure-u-1 title xx_w_1180">
+            <a href="">华讯行业网</a>
+            <a href="">松香网</a>
+            <a href="">华讯通</a>
+            <a href="">华讯通</a>
+            <a href="">华讯通</a>
+            <a href="">华讯通</a>
+            <a href="">华讯通</a>
+            <a href="">华讯通</a>
+        </div>
+        <div class="xx_mar_auto pure-u-1 content">
+            <a href="">集团简介</a>
+            <a href="">|</a>
+            <a href="">关于本网</a>
+            <a href="">|</a>
+            <a href="">企业文化</a>
+            <a href="">|</a>
+            <a href="">联系我们</a>
+            <a href="">|</a>
+            <a href="">诚聘英才</a>
+            <a href="">|</a>
+            <a href="">本网导航</a>
+            <a href="">|</a>
+            <a href="">免责声明</a>
+            <a href="">|</a>
+            <a href="">ENGLISH</a>
+        </div>
+        <div class="xx_mar_auto pure-u-1 content">
+            <a href="">Copyright © 2000-2018 Sinoinfo Ecommerce Inc. All rights reserved</a>
+        </div>
+        <div class="xx_mar_auto pure-u-1 content">
+            <a href="">广西华讯信息技术股份有限公司版权所有</a>
+        </div>
+        <div class="xx_mar_auto pure-u-1 content">
+            <a href="">备案号: 桂ICP备15007906号-11 桂公网安备 45010302000299号</a>
+        </div>
+        <div class="xx_mar_auto pure-u-1 content">
+            <a href="">电话：0771-5553301 传真：0771-5553302</a>
+        </div>
+        <div class="xx_mar_auto pure-u-1 content">
+            <a href="">网址：www.rosin-china.com 邮箱：rosin@rosin-china.com</a>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
