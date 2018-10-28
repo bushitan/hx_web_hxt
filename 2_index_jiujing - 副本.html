@@ -1,0 +1,1954 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta name="viewport" content="width=1280,initial-scale=0.27" />
+    <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
+    <title>华讯酒精网</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <!--<![endif]-->
+
+
+        <!--[if lte IE 8]>
+            <!--<link rel="stylesheet" href="https://purecss.io/combo/1.18.13?/css/layouts/blog-old-ie.css">-->
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <!--<link rel="stylesheet" href="https://purecss.io/combo/1.18.13?/css/layouts/blog.css">-->
+        <!--<![endif]-->
+
+    <link rel="stylesheet" href="css/xx.css">
+    <link rel="stylesheet" href="css/2_theme_jiujing.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/tab.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/ad.css">
+    <link rel="stylesheet" href="css/summary.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/trade.css">
+
+    <!-- 首先引入jQuery和unslider -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/unslider.min.js"></script>
+    <!-- <script src="http://www.jq22.com/demo/unslider-150203225543/jquery-1.11.1.min.js"></script>-->
+    <!-- <script src="http://www.jq22.com/demo/unslider-150203225543/unslider.min.js"></script>-->
+    <!--[if lt IE 9]>
+        <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>-->
+    <![endif]-->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-41480445-1', 'purecss.io');
+    ga('send', 'pageview');
+
+        $(document).ready(function(e) {
+            var unslider04 = $('#hot').unslider({
+                dots: true
+            }),
+            data04 = unslider04.data('unslider');
+//            $('.unslider-arrow04').click(function() {
+//                var fn = this.className.split(' ')[1];
+//                data04[fn]();
+//            });
+
+            var unsliderad = $('#ad').unslider({
+                dots: true
+            }),
+            dataad = unsliderad.data('unslider');
+//            $('.unslider-arrow04').click(function() {
+//                var fn = this.className.split(' ')[1];
+//                data04[fn]();
+//            });
+        });
+    </script>
+</head>
+<body>
+
+<!--     头部 -->
+    <div class="header pure-g ">
+        <div class="xx_mar_auto xx_w_1180">
+            <div class="pure-u-1 menu_list">
+                 <div class="node touch">
+                    English
+                    <ul class="header_help">
+                        <li>
+                            <a href="javascript:;">
+                                한글
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                中文
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="node touch">
+                    客户服务
+                    <ul class="header_help">
+                        <li>
+                            <a href="javascript:;">
+                                帮助说明：
+                            </a>
+                            <a href="" target="_blank" class="contact">
+                                帮助中心
+                            </a>
+                            &nbsp;
+                            <a href="" target="_blank" class="contact">
+                                新手指南
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                在线客服：
+                            </a>
+                            <a href="javascript:;" id="toolbar-toptell" class="contact">
+                                联系在线客服
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                客服热线：0771-5553301 （8:30-17:30）
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" node">|</div>
+                <a class=" node" href="">我的设置</a>
+                <a class=" node" href="">APP</a>
+                <a class=" node" href="">小程序</a>
+            </div>
+        </div>
+    </div>
+
+<!-- 搜索 -->
+<!--2 搜索框-->
+    <div class="search  xx_bg_white pure-g">
+        <div class="xx_mar_auto xx_w_1180">
+            <div class="pure-u-1-3  logo">
+                <img src="img/logo_jiujing.png" alt="" width="100%" height="100%">
+            </div>
+            <div class="pure-u-1-3 tool ">
+                <div class="pure-g ">
+                    <input class="skin_search_input" type="text" placeholder="请输入类别 产地等搜索，例如：马尾松 广西" id="globalSearchInput" ref="globalSearchInput" maxlength="100">
+                    <button class="skin_search_btn" onclick="">搜索</button>
+                </div>
+            </div>
+            <div class="pure-u-1-3  qr">
+                <div class="title">小程序</div>
+                <img src="img/ewm.png" alt=""  width="70" height="70">
+                <div class="qr_large">
+                    扫码打开
+                    <br> 华讯生物圈小程序
+                        <img src="img/ewm.png" width="130" height="130">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- tab菜单 -->
+    <div class="tab xx_bg_white pure-g">
+        <div class="xx_mar_auto xx_w_1180">
+            <div class="pure-u-1-2 skin_tab_title"> 所有服务分类</div>
+            <div class="pure-u-1-2 xx_w_960">
+                <a class="node" href="#jy">首页</a>
+                <a class="node" href="#jy">松香网</a>
+                <a class="node" href="#jy">活性炭网</a>
+                <a class="node" href="#jy">酒精网</a>
+                <a class="node" href="#jy">糠醛网</a>
+                <a class="node" href="#jy">蓖麻油网</a>
+                <a class="node" href="#jy">桐油网</a>
+                <a class="node" href="#jy">香料网</a>
+                <a class="node" href="#jy">共享实验室</a>
+                <a class="node" href="#jy">技术转移中心</a>
+            </div>
+        </div>
+    </div>
+
+<!--menu子页面菜单 -->
+    <div class="menu   pure-g">
+        <img src="img/banner.jpg" class="bg"/>
+        <div class="xx_mar_auto xx_w_1180 summary ">
+            <div class="content pure-u-1-8 xx_w_160 xx_bg_white xx_mar_r_10">
+                <div class="title">供求</div>
+                <div class="sub_title">
+                    <div class="pure-g ">
+                        <a class="pure-u-1-3" href="#jy">会员</a>
+                        <a class="pure-u-1-3" href="#jy">交易</a>
+                        <a class="pure-u-1-3" href="#jy">专利</a>
+                    </div>
+                    <div class="pure-g">
+                        <a class="pure-u-1-3" href="#jy">会员</a>
+                        <a class="pure-u-1-3" href="#jy">交易</a>
+                        <a class="pure-u-1-3" href="#jy">专利</a>
+                    </div>
+                    <div class="pure-g">
+                        <a class="pure-u-1-3" href="#jy">会员</a>
+                        <a class="pure-u-1-3" href="#jy">交易</a>
+                        <a class="pure-u-1-3" href="#jy">专利</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content pure-u-1-8 xx_w_160 xx_bg_white xx_mar_r_10">
+                <div class="title">企业</div>
+                <div class="sub_title">
+                    <div class="pure-g ">
+                        <a class="pure-u-1-3" href="#jy">会员</a>
+                        <a class="pure-u-1-3" href="#jy">交易</a>
+                        <a class="pure-u-1-3" href="#jy">专利</a>
+                    </div>
+                    <div class="pure-g">
+                        <a class="pure-u-1-3" href="#jy">会员</a>
+                        <a class="pure-u-1-3" href="#jy">交易</a>
+                        <a class="pure-u-1-3" href="#jy">专利</a>
+                    </div>
+                    <div class="pure-g">
+                        <a class="pure-u-1-3" href="#jy">会员</a>
+                        <a class="pure-u-1-3" href="#jy">交易</a>
+                        <a class="pure-u-1-3" href="#jy">专利</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content pure-u-1-8 xx_w_160 xx_bg_white xx_mar_r_10">
+                <div class="title">产品</div>
+                <div class="sub_title">
+                    <div class="pure-g ">
+                        <a class="pure-u-1-3" href="#jy">会员</a>
+                        <a class="pure-u-1-3" href="#jy">交易</a>
+                        <a class="pure-u-1-3" href="#jy">专利</a>
+                    </div>
+                    <div class="pure-g">
+                        <a class="pure-u-1-3" href="#jy">会员</a>
+                        <a class="pure-u-1-3" href="#jy">交易</a>
+                        <a class="pure-u-1-3" href="#jy">专利</a>
+                    </div>
+                    <div class="pure-g">
+                        <a class="pure-u-1-3" href="#jy">会员</a>
+                        <a class="pure-u-1-3" href="#jy">交易</a>
+                        <a class="pure-u-1-3" href="#jy">专利</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content pure-u-1-8 xx_w_160 xx_bg_white xx_mar_r_10">
+                <div class="title">行情</div>
+                <div class="sub_title">
+                    <div class="pure-g ">
+                        <a class="pure-u-1-3" href="#jy">会员</a>
+                        <a class="pure-u-1-3" href="#jy">交易</a>
+                        <a class="pure-u-1-3" href="#jy">专利</a>
+                    </div>
+                    <div class="pure-g">
+                        <a class="pure-u-1-3" href="#jy">会员</a>
+                        <a class="pure-u-1-3" href="#jy">交易</a>
+                        <a class="pure-u-1-3" href="#jy">专利</a>
+                    </div>
+                    <div class="pure-g">
+                        <a class="pure-u-1-3" href="#jy">会员</a>
+                        <a class="pure-u-1-3" href="#jy">交易</a>
+                        <a class="pure-u-1-3" href="#jy">专利</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content pure-u-1-8 xx_w_160 xx_bg_white xx_mar_r_10">
+                <div class="title">分析</div>
+                <div class="sub_title">
+                    <div class="pure-g ">
+                        <a class="pure-u-1-3" href="#jy">会员</a>
+                        <a class="pure-u-1-3" href="#jy">交易</a>
+                        <a class="pure-u-1-3" href="#jy">专利</a>
+                    </div>
+                    <div class="pure-g">
+                        <a class="pure-u-1-3" href="#jy">会员</a>
+                        <a class="pure-u-1-3" href="#jy">交易</a>
+                        <a class="pure-u-1-3" href="#jy">专利</a>
+                    </div>
+                    <div class="pure-g">
+                        <a class="pure-u-1-3" href="#jy">会员</a>
+                        <a class="pure-u-1-3" href="#jy">交易</a>
+                        <a class="pure-u-1-3" href="#jy">专利</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content pure-u-1-8 xx_w_160 xx_bg_white xx_mar_r_10">
+                <div class="title">数据</div>
+                <div class="sub_title">
+                    <div class="pure-g ">
+                        <a class="pure-u-1-3" href="#jy">会员</a>
+                        <a class="pure-u-1-3" href="#jy">交易</a>
+                        <a class="pure-u-1-3" href="#jy">专利</a>
+                    </div>
+                    <div class="pure-g">
+                        <a class="pure-u-1-3" href="#jy">会员</a>
+                        <a class="pure-u-1-3" href="#jy">交易</a>
+                        <a class="pure-u-1-3" href="#jy">专利</a>
+                    </div>
+                    <div class="pure-g">
+                        <a class="pure-u-1-3" href="#jy">会员</a>
+                        <a class="pure-u-1-3" href="#jy">交易</a>
+                        <a class="pure-u-1-3" href="#jy">专利</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content pure-u-1-8 xx_w_160 xx_bg_white">
+                <div class="title">专题</div>
+                <div class="sub_title">
+                    <div class="pure-g ">
+                        <a class="pure-u-1-3" href="#jy">会员</a>
+                        <a class="pure-u-1-3" href="#jy">交易</a>
+                        <a class="pure-u-1-3" href="#jy">专利</a>
+                    </div>
+                    <div class="pure-g">
+                        <a class="pure-u-1-3" href="#jy">会员</a>
+                        <a class="pure-u-1-3" href="#jy">交易</a>
+                        <a class="pure-u-1-3" href="#jy">专利</a>
+                    </div>
+                    <div class="pure-g">
+                        <a class="pure-u-1-3" href="#jy">会员</a>
+                        <a class="pure-u-1-3" href="#jy">交易</a>
+                        <a class="pure-u-1-3" href="#jy">专利</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+<!-- swiper 滚动条-->
+<!--4 轮播图-->
+    <div class="swiper pure-g">
+        <div class="xx_mar_auto xx_w_1180">
+            <!--左边栏-->
+            <div class="pure-u-1-3 t_left xx_bg_white">
+                <div class="skin_swiper_node">
+                    <div class="title">供求</div>
+                    <div class="pure-g content">
+                        <div class="pure-u-1-3">会员</div>
+                        <div class="pure-u-1-3">交易</div>
+                        <div class="pure-u-1-3">专利</div>
+                    </div>
+                    <!--tab_dialog 1-->
+                    <div class="dialog  offset_0">
+                        <div class="bound pure-g">
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node ">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node ">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skin_swiper_node">
+                    <div class="title">企业</div>
+                    <div class="pure-g content">
+                        <div class="pure-u-1-3">热点</div>
+                        <div class="pure-u-1-3">快讯</div>
+                        <div class="pure-u-1-3">商机</div>
+                    </div>
+                    <!--tab_dialog 2-->
+                    <div class="dialog  offset_61">
+                        <div class="bound pure-g">
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node ">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node ">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skin_swiper_node">
+                    <div class="title">产品</div>
+                    <div class="pure-g content">
+                        <div class="pure-u-1-3">会员</div>
+                        <div class="pure-u-1-3">交易</div>
+                        <div class="pure-u-1-3">专利</div>
+                    </div>
+                    <!--tab_dialog 3-->
+                    <div class="dialog  offset_122">
+                        <div class="bound pure-g">
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node ">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node ">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skin_swiper_node">
+                    <div class="title">行情</div>
+                    <div class="pure-g content">
+                        <div class="pure-u-1-3">指数</div>
+                        <div class="pure-u-1-3">价格</div>
+                        <div class="pure-u-1-3">数据</div>
+                    </div>
+                    <!--tab_dialog 4-->
+                    <div class="dialog  offset_183">
+                        <div class="bound pure-g">
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node ">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node ">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skin_swiper_node">
+                    <div class="title">分析</div>
+                    <div class="pure-g content">
+                        <div class="pure-u-1-3">挂牌</div>
+                        <div class="pure-u-1-3">商城</div>
+                        <div class="pure-u-1-3">采集</div>
+                    </div>
+                    <!--tab_dialog 5-->
+                    <div class="dialog  offset_244">
+                        <div class="bound pure-g">
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node ">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node ">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skin_swiper_node">
+                    <div class="title">数据</div>
+                    <div class="pure-g content">
+                        <div class="pure-u-1-3">原料</div>
+                        <div class="pure-u-1-3">生产</div>
+                        <div class="pure-u-1-3">设备</div>
+                    </div>
+                    <!--tab_dialog 6-->
+                    <div class="dialog  offset_305">
+                        <div class="bound pure-g">
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node ">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node ">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skin_swiper_node">
+                    <div class="title">专题</div>
+                    <div class="pure-g content">
+                        <div class="pure-u-1-3">法规</div>
+                        <div class="pure-u-1-3">百科</div>
+                        <div class="pure-u-1-3">文库</div>
+                    </div>
+                    <!--tab_dialog 7-->
+                    <div class="dialog  offset_366">
+                        <div class="bound pure-g">
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node line_gray">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node ">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-u-1-2 dialog_node ">
+                                <div class="name">会员</div>
+                                <div class=" pure-g">
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span >9月26日各地松脂价格表</span>
+                                    </div>
+                                    <div class="pure-u-1-2 description">
+                                        <span class="new">new</span>
+                                        <span>9月26日各地松脂价格表</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--中间栏-->
+            <div class="pure-u-1-3 t_center xx_bg_white ">
+                <div class="banner" id="hot">
+                    <ul>
+                        <li><img src="img/cover.jpg" alt="" width="670" height="407" ></li>
+                        <li><img src="img/yk_2.jpg" alt="" width="670" height="407"   ></li>
+                        <li><img src="img/yk_3.jpg" alt="" width="670" height="407"  ></li>
+                        <li><img src="img/yk_4.jpg" alt="" width="670" height="407" ></li>
+                    </ul>
+                </div>
+            </div>
+            <!--右边栏-->
+            <div class="pure-u-1-3 t_right xx_bg_white">
+                <div class="hi">
+                     Hi，欢迎来到华讯松香网
+                 </div>
+                 <div class="pure-g">
+                     <!--登陆前-->
+                    <div class="pure-u-1-2 " ><a class="skin_login">登陆</a></div>
+                    <div class="pure-u-1-2 " ><a class="skin_register">注册</a></div>
+
+                     <!--登陆后-->
+                    <!--<div class="pure-u-1 " ><a class="register">欢迎您</a></div>-->
+                 </div>
+
+                <div class="info">
+                    <div class="pure-g ">
+                        <div class="pure-u-1-2 buy click" ><a >供应</a></div>
+                        <div class="pure-u-1-2 sell " ><a class="">求购</a></div>
+                    </div>
+                    <div class="article">
+                        <div>  9月25日广西松香供应价格</div>
+                        <div>  9月26日广西松香供应价格</div>
+                        <div>  9月27日广西松香供应价格</div>
+                    </div>
+                </div>
+
+                 <div class="icon pure-g xx_border_gray">
+                     <div class="pure-u-1-3" >
+                        <img src="img/1.png" width="23" height="23"/><div>发布求购</div>
+                     </div>
+                     <div class="pure-u-1-3" >
+                        <img src="img/2.png" width="23" height="23"/><div>卖家报价</div>
+                     </div>
+                     <div class="pure-u-1-3" >
+                        <img src="img/3.png" width="23" height="23"/><div>提交订单</div>
+                     </div>
+                     <div class="pure-u-1-3" >
+                        <img src="img/4.png" width="23" height="23"/><div>去求购</div>
+                     </div>
+                     <div class="pure-u-1-3" >
+                        <img src="img/5.png" width="23" height="23"/><div>找现货</div>
+                     </div>
+                     <div class="pure-u-1-3" >
+                        <img src="img/6.png" width="23" height="23"/><div>要融资</div>
+                     </div>
+                     <div class="pure-u-1-3" >
+                        <img src="img/7.png" width="23" height="23"/><div>看行情</div>
+                     </div>
+                     <div class="pure-u-1-3" >
+                        <img src="img/8.png" width="23" height="23"/><div>找物流</div>
+                     </div>
+                     <div class="pure-u-1-3" >
+                        <img src="img/9.png" width="23" height="23"/><div>看资讯</div>
+                     </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--热点-->
+    <div class="news  pure-g ">
+        <div class="xx_mar_auto xx_w_1180 xx_bg_body">
+            <div class="pure-u-1-3 xx_w_280 xx_h_206  xx_bg_white">
+                <div class="xx_pd_15">
+                    <div class="banner" id="ad">
+                        <ul>
+                            <li><img src="img/cover.jpg" alt="" width="250" height="176" ></li>
+                            <li><img src="img/2.png" alt="" width="250" height="176" ></li>
+                            <li><img src="img/3.png" alt="" width="250" height="176" ></li>
+                            <li><img src="img/4.png" alt="" width="250" height="176" ></li>
+                            <li><img src="img/5.png" alt="" width="250" height="176" ></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="pure-u-1-3 xx_w_580 xx_h_206 xx_mar_lr_20 t_hot xx_bg_white">
+                <div class="xx_pd_15">
+                    <div class="title">
+                        <div class=""><span class="mark xx_bg_yellow" > <span>专题</span></span>2017年松香企业大盘点</div>
+                        <div class=""><span class="mark xx_bg_blue" > <span>专题</span></span>2017年松香企业大盘点</div>
+                        <div class=""><span class="mark xx_bg_yellow" > <span>专题</span></span>2017年松香企业大盘点</div>
+                    </div>
+                    <div class="pure-g content">
+                        <div class="pure-u-1-2 ">[价格]4月14日松香21价格价格]4月14日松香21价格价格]4月14日松香21价格表</div>
+                        <div class="pure-u-1-2 ">[价格]4月14日松香21价格价格]4月14日松香21价格价格]4月14日松香21价格表</div>
+                        <div class="pure-u-1-2 ">[价格]4月14日松香21价格价格]4月14日松香21价格价格]4月14日松香21价格表</div>
+                        <div class="pure-u-1-2 ">[价格]4月14日松香21价格价格]4月14日松香21价格价格]4月14日松香21价格表</div>
+                        <div class="pure-u-1-2 ">[价格]4月14日松香21价格价格]4月14日松香21价格价格]4月14日松香21价格表</div>
+                        <div class="pure-u-1-2 ">[价格]4月14日松香21价格价格]4月14日松香21价格价格]4月14日松香21价格表</div>
+                    </div>
+                </div>
+            </div>
+            <div class="pure-u-1-3 xx_w_280 xx_h_206 xx_bg_white">
+                <div class="xx_pd_15">
+                    <img src="img/zhishu.png" width="100%" height="176" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--6 目录-->
+    <div class="category  pure-g xx_border_gray ">
+        <div class="xx_mar_auto xx_w_1180">
+            <div class="pure-u-1-1  ">
+                  <a href="" class="title">供求</a>
+                  <a href="">挂牌</a>
+                  <a href="">理财</a>
+                  <a href="">商城</a>
+                  <a href="" class="skin_category_select">集采</a>
+                  <a href="">拍卖</a>
+                  <a href="">理财</a>
+                  <a href="">油墨</a>
+                  <a href="">物流</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--文章-->
+    <div class="news  pure-g ">
+        <div class="xx_mar_auto xx_w_1180">
+            <div class="pure-u-1-3 xx_w_380 xx_h_206  xx_bg_white">
+                <div class="xx_pd_15">
+                   <img src="img/zhishu.png" width="100%" height="176">
+                </div>
+            </div>
+            <div class="pure-u-1-3 xx_w_380 xx_h_206 xx_mar_lr_20 xx_bg_white">
+                <div class="xx_pd_15">
+                    <div class="title">
+                         <span class="select">生产</span>
+                         <span>深加工</span>
+                    </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                </div>
+            </div>
+            <div class="pure-u-1-3 xx_w_380 xx_h_206 xx_bg_white">
+                <div class="xx_pd_15">
+                     <div class="title">
+                         <span class="select">供应链</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!--交易模块-->
+    <div class="news  pure-g ">
+        <div class="trade xx_mar_auto xx_w_1180">
+           <div class="pure-u-1-2 xx_w_380 xx_h_206 xx_mar_r_20  xx_bg_white">
+                <div class="xx_pd_15">
+                    <img src="img/zhishu.png" width="100%" height="176">
+                </div>
+            </div>
+            <div class="pure-u-1-2 xx_mar_auto  xx_w_780 xx_h_206 xx_bg_white">
+            <div class="title pure-g " >
+                <div class="pure-u-1-8">产品名</div>
+                <div class="pure-u-1-8">产地</div>
+                <div class="pure-u-1-8">交货地</div>
+                <div class="pure-u-1-8">区间价</div>
+                <div class="pure-u-1-8">涨跌</div>
+                <div class="pure-u-1-8">涨跌量</div>
+                <div class="pure-u-1-8">发布日期</div>
+                <div class="pure-u-1-8">走势图</div>
+            </div>
+            <div class="content pure-g " >
+                <div class="pure-u-1-8">福建马尾松松香</div>
+                <div class="pure-u-1-8">福建</div>
+                <div class="pure-u-1-8">福建</div>
+                <div class="pure-u-1-8">12400-12400</div>
+                <div class="pure-u-1-8">--</div>
+                <div class="pure-u-1-8">0.0</div>
+                <div class="pure-u-1-8">18-04-13</div>
+                <div class="pure-u-1-8">价格走势</div>
+            </div>
+            <div class="content pure-g " >
+                <div class="pure-u-1-8">福建马尾松松香</div>
+                <div class="pure-u-1-8">福建</div>
+                <div class="pure-u-1-8">福建</div>
+                <div class="pure-u-1-8">12400-12400</div>
+                <div class="pure-u-1-8">--</div>
+                <div class="pure-u-1-8">0.0</div>
+                <div class="pure-u-1-8">18-04-13</div>
+                <div class="pure-u-1-8">价格走势</div>
+            </div>
+            <div class="content pure-g " >
+                <div class="pure-u-1-8">福建马尾松松香</div>
+                <div class="pure-u-1-8">福建</div>
+                <div class="pure-u-1-8">福建</div>
+                <div class="pure-u-1-8">12400-12400</div>
+                <div class="pure-u-1-8">--</div>
+                <div class="pure-u-1-8">0.0</div>
+                <div class="pure-u-1-8">18-04-13</div>
+                <div class="pure-u-1-8">价格走势</div>
+            </div>
+            <div class="content pure-g " >
+                <div class="pure-u-1-8">福建马尾松松香</div>
+                <div class="pure-u-1-8">福建</div>
+                <div class="pure-u-1-8">福建</div>
+                <div class="pure-u-1-8">12400-12400</div>
+                <div class="pure-u-1-8">--</div>
+                <div class="pure-u-1-8">0.0</div>
+                <div class="pure-u-1-8">18-04-13</div>
+                <div class="pure-u-1-8">价格走势</div>
+            </div>
+            <div class="content pure-g " >
+                <div class="pure-u-1-8">福建马尾松松香</div>
+                <div class="pure-u-1-8">福建</div>
+                <div class="pure-u-1-8">昆明站台</div>
+                <div class="pure-u-1-8">12400-12400</div>
+                <div class="pure-u-1-8">--</div>
+                <div class="pure-u-1-8">0.0</div>
+                <div class="pure-u-1-8">18-04-13</div>
+                <div class="pure-u-1-8">价格走势</div>
+            </div>
+            <div class="content pure-g " >
+                <div class="pure-u-1-8">福建马尾松松香</div>
+                <div class="pure-u-1-8">福建</div>
+                <div class="pure-u-1-8">福建</div>
+                <div class="pure-u-1-8">12400-12400</div>
+                <div class="pure-u-1-8">--</div>
+                <div class="pure-u-1-8">0.0</div>
+                <div class="pure-u-1-8">18-04-13</div>
+                <div class="pure-u-1-8">价格走势</div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+        <!--周述 月评 短信-->
+    <div class="news  pure-g ">
+        <div class="xx_mar_auto xx_w_1180">
+            <div class="pure-u-1-3 xx_w_780 xx_h_206 xx_bg_white xx_mar_r_20">
+                <div class="xx_pd_15 ">
+                     <div class="title">
+                         <span class="select">出口数据</span>
+                         <span >松香树脂</span>
+                         <span >松香甘油脂类</span>
+                     </div>
+                    <div class=" pure-g ">
+                        <div class="pure-u-1-2 ">
+                            <div class="xx_pd_r_20">
+                                <div class="content ">
+                                     <label><a href="">[价格]4月14日价格的</a></label>
+                                     <span>04-12</span>
+                                 </div>
+                                 <div class="content">
+                                     <label><a href="">[价格]4月14日价格的</a></label>
+                                     <span>04-12</span>
+                                 </div>
+                                 <div class="content">
+                                     <label><a href="">[价格]4月14日价格的</a></label>
+                                     <span>04-12</span>
+                                 </div>
+                                 <div class="content">
+                                     <label><a href="">[价格]4月14日价格的</a></label>
+                                     <span>04-12</span>
+                                 </div>
+                                 <div class="content">
+                                     <label><a href="">[价格]4月14日价格的</a></label>
+                                     <span>04-12</span>
+                                 </div>
+                                 <div class="content">
+                                     <label><a href="">[价格]4月14日价格的</a></label>
+                                     <span>04-12</span>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="pure-u-1-2 ">
+                            <div class="xx_pd_l_20 ">
+                                <div class="content ">
+                                     <label><a href="">[价格]4月14日价格的</a></label>
+                                     <span>04-12</span>
+                                 </div>
+                                 <div class="content">
+                                     <label><a href="">[价格]4月14日价格的</a></label>
+                                     <span>04-12</span>
+                                 </div>
+                                 <div class="content">
+                                     <label><a href="">[价格]4月14日价格的</a></label>
+                                     <span>04-12</span>
+                                 </div>
+                                 <div class="content">
+                                     <label><a href="">[价格]4月14日价格的</a></label>
+                                     <span>04-12</span>
+                                 </div>
+                                 <div class="content">
+                                     <label><a href="">[价格]4月14日价格的</a></label>
+                                     <span>04-12</span>
+                                 </div>
+                                 <div class="content">
+                                     <label><a href="">[价格]4月14日价格的</a></label>
+                                     <span>04-12</span>
+                                 </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+            <div class="pure-u-1-3 xx_w_380 xx_h_206  xx_bg_white">
+                <div class="xx_pd_15">
+                     <div class="title">
+                         <span class="select">松香树脂进口数据</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+        <!--速递 论市 广告-->
+    <div class="news  pure-g xx_mar_t_20">
+        <div class="xx_mar_auto xx_w_1180">
+            <div class="pure-u-1-3 xx_w_380 xx_h_206  xx_bg_white">
+                <div class="xx_pd_15">
+                     <div class="title">
+                         <span class="select">行情速递</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                </div>
+            </div>
+            <div class="pure-u-1-3 xx_w_380 xx_h_206 xx_mar_lr_20 xx_bg_white">
+                <div class="xx_pd_15">
+                    <div class="title">
+                         <span class="select">商家论市</span>
+                    </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                     <div class="content">
+                         <label><a href="">[价格]4月14日价格的</a></label>
+                         <span>04-12</span>
+                     </div>
+                </div>
+            </div>
+            <div class="pure-u-1-3 xx_w_380 xx_h_206  xx_bg_white">
+                <div class="xx_pd_15">
+                    <img src="img/yk_3.jpg" width="100%" height="176">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- 广告 -->
+    <div class="ad  pure-g ">
+        <div class="xx_mar_auto xx_w_1180">
+            <div class="pure-u-1-3 xx_w_380 xx_h_120  xx_bg_white">
+                <div class="xx_pd_15" >
+                    <a href="">
+                        <img src="http://www.rosin-china.com/_m/cache/d9/82/d982102bfb0e3e0f54d7cd7d0d514ba2.jpg" width="100%" height="90" />
+                    </a>
+                </div>
+            </div>
+            <div class="pure-u-1-3 xx_w_380 xx_h_120  xx_bg_white xx_mar_lr_20">
+                <div class="xx_pd_15" >
+                    <a href="">
+                        <img src="http://www.rosin-china.com/_m/cache/d9/82/d982102bfb0e3e0f54d7cd7d0d514ba2.jpg" width="100%" height="90" />
+                    </a>
+                </div>
+            </div>
+            <div class="pure-u-1-3 xx_w_380 xx_h_120  xx_bg_white">
+                <div class="xx_pd_15" >
+                    <a href="">
+                        <img src="http://www.rosin-china.com/_m/cache/d9/82/d982102bfb0e3e0f54d7cd7d0d514ba2.jpg" width="100%" height="90" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ad  pure-g ">
+        <div class="xx_mar_auto xx_w_1180">
+            <div class="pure-u-1-4 xx_w_280 xx_h_120  xx_bg_white">
+                <div class="xx_pd_15" >
+                    <a href="">
+                        <img src="http://www.rosin-china.com/_m/cache/d9/82/d982102bfb0e3e0f54d7cd7d0d514ba2.jpg" width="100%" height="90" />
+                    </a>
+                </div>
+            </div>
+            <div class="pure-u-1-4 xx_w_280 xx_h_120  xx_bg_white xx_mar_lr_20">
+                <div class="xx_pd_15" >
+                    <a href="">
+                        <img src="http://www.rosin-china.com/_m/cache/d9/82/d982102bfb0e3e0f54d7cd7d0d514ba2.jpg" width="100%" height="90" />
+                    </a>
+                </div>
+            </div>
+            <div class="pure-u-1-4 xx_w_280 xx_h_120  xx_bg_white xx_mar_r_20">
+                <div class="xx_pd_15" >
+                    <a href="">
+                        <img src="http://www.rosin-china.com/_m/cache/d9/82/d982102bfb0e3e0f54d7cd7d0d514ba2.jpg" width="100%" height="90" />
+                    </a>
+                </div>
+            </div>
+            <div class="pure-u-1-4 xx_w_280 xx_h_120  xx_bg_white">
+                <div class="xx_pd_15" >
+                    <a href="">
+                        <img src="http://www.rosin-china.com/_m/cache/d9/82/d982102bfb0e3e0f54d7cd7d0d514ba2.jpg" width="100%" height="90" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+  <!--底部-->
+    <div class="footer  pure-g xx_mar_t_20 xx_border_gray">
+        <div class="xx_mar_auto pure-u-1 title">
+            <a href="">华讯行业网</a>
+            <a href="">松香网</a>
+            <a href="">华讯通</a>
+            <a href="">华讯通</a>
+            <a href="">华讯通</a>
+            <a href="">华讯通</a>
+            <a href="">华讯通</a>
+            <a href="">华讯通</a>
+        </div>
+        <div class="xx_mar_auto pure-u-1 content">
+            <a href="">集团简介</a>
+            <a href="">|</a>
+            <a href="">关于本网</a>
+            <a href="">|</a>
+            <a href="">企业文化</a>
+            <a href="">|</a>
+            <a href="">联系我们</a>
+            <a href="">|</a>
+            <a href="">诚聘英才</a>
+            <a href="">|</a>
+            <a href="">本网导航</a>
+            <a href="">|</a>
+            <a href="">免责声明</a>
+            <a href="">|</a>
+            <a href="">ENGLISH</a>
+        </div>
+        <div class="xx_mar_auto pure-u-1 content">
+            <a href="">Copyright © 2000-2018 Sinoinfo Ecommerce Inc. All rights reserved</a>
+        </div>
+        <div class="xx_mar_auto pure-u-1 content">
+            <a href="">广西华讯信息技术股份有限公司版权所有</a>
+        </div>
+        <div class="xx_mar_auto pure-u-1 content">
+            <a href="">备案号: 桂ICP备15007906号-11 桂公网安备 45010302000299号</a>
+        </div>
+        <div class="xx_mar_auto pure-u-1 content">
+            <a href="">电话：0771-5553301 传真：0771-5553302</a>
+        </div>
+        <div class="xx_mar_auto pure-u-1 content">
+            <a href="">网址：www.rosin-china.com 邮箱：rosin@rosin-china.com</a>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
