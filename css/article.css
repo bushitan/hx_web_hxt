@@ -10,6 +10,7 @@
 
 .article .title{
     /*float: left;*/
+    margin-top: 20px;
     line-height: 35px;
     text-align: center;
     font-size: 1.2em;
@@ -32,12 +33,27 @@
     font-size: 0.9em;
 }
 
-/*ндубср╡Ю╧Ц╦Ф*/
+/*О©╫О©╫О©╫О©╫О©╫р╡О©╫О©╫О©╫*/
 .article .summary{
     font-size: 0.9em;
 
 }
+.article .no_power{
+    text-align: center;
+    margin: 30px;
+    color: #888;
+}
+.article .no_power a{
+    padding: 10px 15px;
+    line-height: 36px;
+    border: 0;
+    color: #fff;
+    font-size: 0.8em;
+    cursor: pointer;
+    outline: none;
+    background: #f6ab00;
 
+}
 
 
 /*.category .select {*/
