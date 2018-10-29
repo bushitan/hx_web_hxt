@@ -1,0 +1,663 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta name="viewport" content="width=1280,initial-scale=0.27" />
+    <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
+    <title>华讯松香网首页</title>
+
+    <!--<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">-->
+
+    <!--pure-min.css-->
+        <link rel="stylesheet" href="css/pure-min.css">
+
+    <!--[if lte IE 8]>
+        <!--<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">-->
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <!--<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">-->
+    <!--<![endif]-->
+
+
+        <!--[if lte IE 8]>
+            <!--<link rel="stylesheet" href="https://purecss.io/combo/1.18.13?/css/layouts/blog-old-ie.css">-->
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <!--<link rel="stylesheet" href="https://purecss.io/combo/1.18.13?/css/layouts/blog.css">-->
+        <!--<![endif]-->
+
+    <link rel="stylesheet" href="css/xx.css">
+    <link rel="stylesheet" href="css/1_theme_songxiang.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/tab.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <link rel="stylesheet" href="css/register.css">
+
+
+    <!--<link rel="stylesheet" href="css/category.css">-->
+    <!--<link rel="stylesheet" href="css/swiper.css">-->
+    <!--<link rel="stylesheet" href="css/news.css">-->
+    <!--<link rel="stylesheet" href="css/ad.css">-->
+    <!--<link rel="stylesheet" href="css/summary.css">-->
+    <!--<link rel="stylesheet" href="css/trade.css">-->
+
+    <!-- 首先引入jQuery和unslider -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/unslider.min.js"></script>
+    <script type="text/javascript" src="js/easyform.js"></script>
+    <!-- <script src="http://www.jq22.com/demo/unslider-150203225543/jquery-1.11.1.min.js"></script>-->
+    <!-- <script src="http://www.jq22.com/demo/unslider-150203225543/unslider.min.js"></script>-->
+    <!--[if lt IE 9]>
+        <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>-->
+    <![endif]-->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-41480445-1', 'purecss.io');
+    ga('send', 'pageview');
+
+        $(document).ready(function(e) {
+            var unslider04 = $('#hot').unslider({
+                dots: true
+            }),
+            data04 = unslider04.data('unslider');
+//            $('.unslider-arrow04').click(function() {
+//                var fn = this.className.split(' ')[1];
+//                data04[fn]();
+//            });
+
+            var unsliderad = $('#ad').unslider({
+                dots: true
+            }),
+            dataad = unsliderad.data('unslider');
+//            $('.unslider-arrow04').click(function() {
+//                var fn = this.className.split(' ')[1];
+//                data04[fn]();
+//            });
+        });
+    </script>
+</head>
+<body>
+
+<!--     头部 -->
+    <div class="header pure-g ">
+        <div class="xx_mar_auto xx_w_1180">
+            <div class="pure-u-1 menu_list">
+                 <div class="node touch">
+                    English
+                    <ul class="header_help">
+                        <li>
+                            <a href="javascript:;">
+                                한글
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                中文
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="node touch">
+                    客户服务
+                    <ul class="header_help">
+                        <li>
+                            <a href="javascript:;">
+                                帮助说明：
+                            </a>
+                            <a href="" target="_blank" class="contact">
+                                帮助中心
+                            </a>
+                            &nbsp;
+                            <a href="" target="_blank" class="contact">
+                                新手指南
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                在线客服：
+                            </a>
+                            <a href="javascript:;" id="toolbar-toptell" class="contact">
+                                联系在线客服
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                客服热线：0771-5553301 （8:30-17:30）
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" node">|</div>
+                <a class=" node" href="">我的设置</a>
+                <a class=" node" href="">APP</a>
+                <a class=" node" href="">小程序</a>
+            </div>
+        </div>
+    </div>
+
+<!-- 搜索 -->
+<!--2 搜索框-->
+    <div class="search  xx_bg_white pure-g">
+        <div class="xx_mar_auto xx_w_1180">
+            <div class="pure-u-1-3  logo">
+                <img src="img/logo.png" alt="" width="100%" height="100%">
+            </div>
+            <div class="pure-u-1-3 tool ">
+                <div class="pure-g ">
+                    <input class="skin_search_input pure-u-1-2" type="text" placeholder="请输入类别 产地等搜索，例如：马尾松 广西" id="globalSearchInput" ref="globalSearchInput" maxlength="100">
+                    <button class="skin_search_btn pure-u-1-2" onclick="">搜索</button>
+                </div>
+            </div>
+            <div class="pure-u-1-3  qr">
+                <div class="title">小程序</div>
+                <img src="img/ewm.png" alt=""  width="70" height="70">
+                <div class="qr_large">
+                    扫码打开
+                    <br> 华讯生物圈小程序
+                        <img src="img/ewm.png" width="130" height="130">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- tab菜单 -->
+    <div class="tab xx_bg_white pure-g">
+        <div class="xx_mar_auto xx_w_1180">
+            <div class="pure-u-1-2 skin_tab_title"> 所有服务分类</div>
+            <div class="pure-u-1-2 xx_w_960">
+                <a class="node" href="#jy">首页</a>
+                <a class="node" href="#jy">松香网</a>
+                <a class="node" href="#jy">活性炭网</a>
+                <a class="node" href="#jy">酒精网</a>
+                <a class="node" href="#jy">糠醛网</a>
+                <a class="node" href="#jy">蓖麻油网</a>
+                <a class="node" href="#jy">桐油网</a>
+                <a class="node" href="#jy">香料网</a>
+                <a class="node" href="#jy">共享实验室</a>
+                <a class="node" href="#jy">技术转移中心</a>
+            </div>
+        </div>
+    </div>
+
+
+
+<!--menu子页面菜单 -->
+    <div class="menu   pure-g">
+        <img src="img/banner.jpg" class="bg"/>
+        <div class="xx_mar_auto xx_w_1180 xx_h_129 xx_pd_tb_10 ">
+            <div class="xx_pd_tb_10">
+                <div class="content pure-u-1-8 xx_w_160  xx_bg_white xx_mar_r_10">
+                    <div class="title">供求</div>
+                    <div class="sub_title">
+                        <div class="pure-g ">
+                            <a class="pure-u-1-3" href="#jy">会员</a>
+                            <a class="pure-u-1-3" href="#jy">交易</a>
+                            <a class="pure-u-1-3" href="#jy">专利</a>
+                        </div>
+                        <div class="pure-g">
+                            <a class="pure-u-1-3" href="#jy">会员</a>
+                            <a class="pure-u-1-3" href="#jy">交易</a>
+                            <a class="pure-u-1-3" href="#jy">专利</a>
+                        </div>
+                        <div class="pure-g">
+                            <a class="pure-u-1-3" href="#jy">会员</a>
+                            <a class="pure-u-1-3" href="#jy">交易</a>
+                            <a class="pure-u-1-3" href="#jy">专利</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content pure-u-1-8 xx_w_160 xx_bg_white xx_mar_r_10">
+                    <div class="title">企业</div>
+                    <div class="sub_title">
+                        <div class="pure-g ">
+                            <a class="pure-u-1-3" href="#jy">会员</a>
+                            <a class="pure-u-1-3" href="#jy">交易</a>
+                            <a class="pure-u-1-3" href="#jy">专利</a>
+                        </div>
+                        <div class="pure-g">
+                            <a class="pure-u-1-3" href="#jy">会员</a>
+                            <a class="pure-u-1-3" href="#jy">交易</a>
+                            <a class="pure-u-1-3" href="#jy">专利</a>
+                        </div>
+                        <div class="pure-g">
+                            <a class="pure-u-1-3" href="#jy">会员</a>
+                            <a class="pure-u-1-3" href="#jy">交易</a>
+                            <a class="pure-u-1-3" href="#jy">专利</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content pure-u-1-8 xx_w_160 xx_bg_white xx_mar_r_10">
+                    <div class="title">产品</div>
+                    <div class="sub_title">
+                        <div class="pure-g ">
+                            <a class="pure-u-1-3" href="#jy">会员</a>
+                            <a class="pure-u-1-3" href="#jy">交易</a>
+                            <a class="pure-u-1-3" href="#jy">专利</a>
+                        </div>
+                        <div class="pure-g">
+                            <a class="pure-u-1-3" href="#jy">会员</a>
+                            <a class="pure-u-1-3" href="#jy">交易</a>
+                            <a class="pure-u-1-3" href="#jy">专利</a>
+                        </div>
+                        <div class="pure-g">
+                            <a class="pure-u-1-3" href="#jy">会员</a>
+                            <a class="pure-u-1-3" href="#jy">交易</a>
+                            <a class="pure-u-1-3" href="#jy">专利</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content pure-u-1-8 xx_w_160 xx_bg_white xx_mar_r_10">
+                    <div class="title">行情</div>
+                    <div class="sub_title">
+                        <div class="pure-g ">
+                            <a class="pure-u-1-3" href="#jy">会员</a>
+                            <a class="pure-u-1-3" href="#jy">交易</a>
+                            <a class="pure-u-1-3" href="#jy">专利</a>
+                        </div>
+                        <div class="pure-g">
+                            <a class="pure-u-1-3" href="#jy">会员</a>
+                            <a class="pure-u-1-3" href="#jy">交易</a>
+                            <a class="pure-u-1-3" href="#jy">专利</a>
+                        </div>
+                        <div class="pure-g">
+                            <a class="pure-u-1-3" href="#jy">会员</a>
+                            <a class="pure-u-1-3" href="#jy">交易</a>
+                            <a class="pure-u-1-3" href="#jy">专利</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content pure-u-1-8 xx_w_160 xx_bg_white xx_mar_r_10">
+                    <div class="title">分析</div>
+                    <div class="sub_title">
+                        <div class="pure-g ">
+                            <a class="pure-u-1-3" href="#jy">会员</a>
+                            <a class="pure-u-1-3" href="#jy">交易</a>
+                            <a class="pure-u-1-3" href="#jy">专利</a>
+                        </div>
+                        <div class="pure-g">
+                            <a class="pure-u-1-3" href="#jy">会员</a>
+                            <a class="pure-u-1-3" href="#jy">交易</a>
+                            <a class="pure-u-1-3" href="#jy">专利</a>
+                        </div>
+                        <div class="pure-g">
+                            <a class="pure-u-1-3" href="#jy">会员</a>
+                            <a class="pure-u-1-3" href="#jy">交易</a>
+                            <a class="pure-u-1-3" href="#jy">专利</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content pure-u-1-8 xx_w_160 xx_bg_white xx_mar_r_10">
+                    <div class="title">数据</div>
+                    <div class="sub_title">
+                        <div class="pure-g ">
+                            <a class="pure-u-1-3" href="#jy">会员</a>
+                            <a class="pure-u-1-3" href="#jy">交易</a>
+                            <a class="pure-u-1-3" href="#jy">专利</a>
+                        </div>
+                        <div class="pure-g">
+                            <a class="pure-u-1-3" href="#jy">会员</a>
+                            <a class="pure-u-1-3" href="#jy">交易</a>
+                            <a class="pure-u-1-3" href="#jy">专利</a>
+                        </div>
+                        <div class="pure-g">
+                            <a class="pure-u-1-3" href="#jy">会员</a>
+                            <a class="pure-u-1-3" href="#jy">交易</a>
+                            <a class="pure-u-1-3" href="#jy">专利</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content pure-u-1-8 xx_w_160 xx_bg_white">
+                    <div class="title">专题</div>
+                    <div class="sub_title">
+                        <div class="pure-g ">
+                            <a class="pure-u-1-3" href="#jy">会员</a>
+                            <a class="pure-u-1-3" href="#jy">交易</a>
+                            <a class="pure-u-1-3" href="#jy">专利</a>
+                        </div>
+                        <div class="pure-g">
+                            <a class="pure-u-1-3" href="#jy">会员</a>
+                            <a class="pure-u-1-3" href="#jy">交易</a>
+                            <a class="pure-u-1-3" href="#jy">专利</a>
+                        </div>
+                        <div class="pure-g">
+                            <a class="pure-u-1-3" href="#jy">会员</a>
+                            <a class="pure-u-1-3" href="#jy">交易</a>
+                            <a class="pure-u-1-3" href="#jy">专利</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!--周述 月评 短信-->
+    <div class="register  pure-g ">
+        <div class="xx_mar_auto xx_w_1180">
+            <div class="pure-u-2-3 xx_w_780 xx_bg_white xx_mar_r_20">
+                <div class="xx_pd_15 ">
+                    <div class="path">
+                          <a href="">当前位置： </a>
+                          <a href="">首页 <img src="img/breadcrumbs-separator.png"/> </a>
+                          <a href="">会员中心 <img src="img/breadcrumbs-separator.png"/></a>
+                          <a href="">企业注册 <img src="img/breadcrumbs-separator.png"/></a>
+                          <a href="" class="skin_category_select">展会</a>
+                    </div>
+
+                    <div class="content ">
+                        <form method="post" id="reg-form" >
+
+                            <!--账户-->
+                            <div class="title xx_border_gray ">帐户信息</div>
+                            <div class="node">
+                                <div ><label>*</label>用户名</div>
+                                <input name="uid" type="text" id="" easyform="length:4-16;char-normal;real-time;" message="用户名必须为4—16位的英文字母或数字" easytip="disappear:lost-focus;theme:blue;" ajax-message="用户名已存在!">
+                                <span>(必填。不多于30个字符。只能用字母、数字和字符 @/./+/-/_ 。)</span>
+                            </div>
+                            <div class="node">
+                                <div><label>*</label>密码</div>
+                                <input name="uid" type="text" id="" message="" ajax-message="" easyform="length:4-16;char-normal;real-time;"  easytip="disappear:lost-focus;theme:blue;" >
+                            </div>
+                            <div class="node">
+                                <div><label>*</label>确认密码</div>
+                                <input name="uid" type="text" id="" message="" ajax-message="" easyform="length:4-16;char-normal;real-time;"  easytip="disappear:lost-focus;theme:blue;" >
+                                <span>(输入与上面相同的密码，以进行验证。)</span>
+                            </div>
+                            <div class="node">
+                                <div><label>*</label>姓氏</div>
+                                <input name="uid" type="text" id="" message="" ajax-message="" easyform="length:4-16;char-normal;real-time;"  easytip="disappear:lost-focus;theme:blue;" >
+
+                                <div><label>*</label>名字</div>
+                                <input name="uid" type="text" id="" message="" ajax-message="" easyform="length:4-16;char-normal;real-time;"  easytip="disappear:lost-focus;theme:blue;" >
+                            </div>
+                            <div class="node">
+                                <div class="name">Email地址</div>
+                                <input name="uid" type="text" id="" message="" ajax-message="" easyform="length:4-16;char-normal;real-time;"  easytip="disappear:lost-focus;theme:blue;" >
+                            </div>
+
+                            <!--账户-->
+                            <div class="title xx_border_gray xx_mar_t_20">基本资料</div>
+                            <div class="node">
+                                <div ><label>*</label>性别</div>
+                                &nbsp;&nbsp;
+                                <input type="radio" name="sex"><span>男</span>
+                                &nbsp;&nbsp;
+                                <input type="radio" name="sex"><span>女</span>
+                            </div>
+                            <div class="node">
+                                <div class="name">职务</div>
+                                <input name="uid" type="text" id="" message="" ajax-message="" easyform="length:4-16;char-normal;real-time;"  easytip="disappear:lost-focus;theme:blue;" >
+                            </div>
+                            <div class="node">
+                                <div class="name">手机</div>
+                                <input name="uid" type="text" id="" message="" ajax-message="" easyform="length:4-16;char-normal;real-time;"  easytip="disappear:lost-focus;theme:blue;" >
+                            </div>
+
+
+                            <!--企业基本资料-->
+                            <div class="title xx_border_gray xx_mar_t_20">企业基本资料</div>
+                            <div class="node">
+                                <div ><label>*</label>企业名称</div>
+                                <input name="uid" type="text" id="" easyform="length:4-16;char-normal;real-time;" message="用户名必须为4—16位的英文字母或数字" easytip="disappear:lost-focus;theme:blue;" ajax-message="用户名已存在!">
+                            </div>
+                            <div class="node">
+                                <div ><label>*</label>国家</div>
+                                <select name="CountryCode" id="">
+                                    <option value="CN" selected="selected">中国</option>
+                                    <option value="US">美国</option>
+                                    <option value="CA">加拿大</option>
+                                    <option value="KR">韩国</option>
+                                    <option value="JP">日本</option>
+                                    <option value="Other">其它</option>
+                                </select>
+                            </div>
+                            <div class="node">
+                                <div ><label>*</label>地区</div>
+                                <select name="CountryCode" id="">
+                                    <option value="CN" selected="selected">北京</option>
+                                    <option value="US">天津</option>
+                                    <option value="CA">广西</option>
+                                    <option value="KR">广州</option>
+                                </select>
+                            </div>
+                            <div class="node">
+                                <div ><label>*</label>地址</div>
+                                <input name="uid" type="text" id="" easyform="length:4-16;char-normal;real-time;" message="用户名必须为4—16位的英文字母或数字" easytip="disappear:lost-focus;theme:blue;" ajax-message="用户名已存在!">
+                            </div>
+                            <div class="node">
+                                <div ><label>*</label> 固定电话</div>
+                                <input name="uid" type="text" id=""  easyform="length:4-16;char-normal;real-time;" message="国家区号" placeholder="国家区号" easytip="disappear:lost-focus;theme:blue;" ajax-message="用户名已存在!">
+                                -
+                                <input name="uid" type="text" id="" easyform="length:4-16;char-normal;real-time;" message="地区区号" placeholder="地区区号" easytip="disappear:lost-focus;theme:blue;" ajax-message="用户名已存在!">
+                                -
+                                <input name="uid" type="text" id="" easyform="length:4-16;char-normal;real-time;" message="电话号码" placeholder="电话号码" easytip="disappear:lost-focus;theme:blue;" ajax-message="用户名已存在!">
+                            </div>
+
+
+                            <!--企业业务资料-->
+                            <div class="title xx_border_gray xx_mar_t_20">企业业务资料</div>
+                            <div class="node">
+                                <div ><label>*</label>业务类型</div>
+                                <ul>
+                                    <li> <input type="checkbox" name="task"><span>生产企业</span> </li>
+                                    <li> <input type="checkbox" name="task"><span>生产企业</span> </li>
+                                    <li> <input type="checkbox" name="task"><span>生产企业</span> </li>
+                                    <li> <input type="checkbox" name="task"><span>生产企业</span> </li>
+                                    <li> <input type="checkbox" name="task"><span>生产企业</span> </li>
+                                    <li> <input type="checkbox" name="task"><span>生产企业</span> </li>
+                                    <li> <input type="checkbox" name="task"><span>生产企业</span> </li>
+                                    <li> <input type="checkbox" name="task"><span>生产企业</span> </li>
+                                    <li> <input type="checkbox" name="task"><span>生产企业</span> </li>
+                                    <li> <input type="checkbox" name="task"><span>生产企业</span> </li>
+                                    <li> <input type="checkbox" name="task"><span>生产企业</span> </li>
+                                    <li> <input type="checkbox" name="task"><span>生产企业</span> </li>
+                                </ul>
+                            </div>
+                            <div class="node">
+                                <div ><label>*</label>主营业务</div>
+                                <select name="CountryCode" id="">
+                                    <option value="CN" selected="selected">松香</option>
+                                    <option value="US">松脂</option>
+                                    <option value="CA">松节油</option>
+                                    <option value="KR">松香深加工</option>
+                                </select>
+                            </div>
+                            <div class="node">
+                                <div class="name">其他深加工</div>
+                                <input name="uid" type="text" id="" message="" ajax-message="" easyform="length:4-16;char-normal;real-time;"  easytip="disappear:lost-focus;theme:blue;" >
+                            </div>
+                            <div class="node">
+                                <div class="name"><label>*</label>验证码</div>
+                                <input name="uid" type="text" id="" message="" ajax-message="" easyform="length:4-16;char-normal;real-time;"  easytip="disappear:lost-focus;theme:blue;" >
+                                <img src="img/banner.jpg"/>
+                                <span class="change_qr"> 换一张</span>
+                            </div>
+                            <div class="buttons">
+                                <input value="注 册" type="submit" style="margin-right:20px; margin-top:20px;">
+                                <input value="我有账号，我要登录" type="button" style="margin-right:45px; margin-top:20px;">
+                            </div>
+                        </form>
+
+                        <!--<div class="form-div">-->
+                            <!--<form id="reg-form" action="" method="post">-->
+                                <!--<table>-->
+                                    <!--<tr>-->
+                                        <!--<td>国家</td>-->
+                                        <!--<td class="td_select">-->
+                                            <!--<select name="CountryCode" id="id_CountryCode">-->
+                                                <!--<option value="CN" selected="selected">中国</option>-->
+                                                <!--<option value="US">美国</option>-->
+                                                <!--<option value="CA">加拿大</option>-->
+                                                <!--<option value="KR">韩国</option>-->
+                                                <!--<option value="JP">日本</option>-->
+                                                <!--<option value="Other">其它</option>-->
+                                            <!--</select>-->
+                                        <!--</td>-->
+                                    <!--</tr>-->
+                                    <!--<div class="title">帐户信息</div>-->
+                                    <!--<tr>-->
+                                        <!--<td>地区</td>-->
+                                        <!--<td class="td_select">-->
+                                            <!--<select name="CountryCode" id="id_CountryCode">-->
+                                                <!--<option value="CN" selected="selected">中国</option>-->
+                                                <!--<option value="US">美国</option>-->
+                                                <!--<option value="CA">加拿大</option>-->
+                                                <!--<option value="KR">韩国</option>-->
+                                                <!--<option value="JP">日本</option>-->
+                                                <!--<option value="Other">其它</option>-->
+                                            <!--</select>-->
+                                        <!--</td>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<td>用户名</td>-->
+                                        <!--<td>-->
+                                            <!--<input name="uid" type="text" id="uid" easyform="length:4-16;char-normal;real-time;" message="用户名必须为4—16位的英文字母或数字" easytip="disappear:lost-focus;theme:blue;" ajax-message="用户名已存在!">-->
+                                        <!--</td>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<td>密码</td>-->
+                                        <!--<td><input name="psw1" type="password" id="psw1" easyform="length:6-16;" message="密码必须为6—16位" easytip="disappear:lost-focus;theme:blue;"></td>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<td>确认密码</td>-->
+                                        <!--<td><input name="psw2" type="password" id="psw2" easyform="length:6-16;equal:#psw1;" message="两次密码输入要一致" easytip="disappear:lost-focus;theme:blue;"></td>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<td>email</td>-->
+                                        <!--<td><input name="email" type="text" id="email" easyform="email;real-time;" message="Email格式要正确" easytip="disappear:lost-focus;theme:blue;" ajax-message="这个Email地址已经被注册过，请换一个吧!"></td>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<td>昵称</td>-->
+                                        <!--<td><input name="nickname" type="text" id="nickname" easyform="length:2-16" message="昵称必须为2—16位" easytip="disappear:lost-focus;theme:blue;"></td>-->
+                                    <!--</tr>-->
+                                <!--</table>-->
+                                <!--<div class="buttons">-->
+                                    <!--<input value="注 册" type="submit" style="margin-right:20px; margin-top:20px;">-->
+                                    <!--<input value="我有账号，我要登录" type="button" style="margin-right:45px; margin-top:20px;">-->
+                                <!--</div>-->
+                                <!--<br class="clear">-->
+                            <!--</form>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="summary pure-u-1-3 xx_w_380   ">
+                <div class="xx_pd_15 xx_bg_white">
+                    <div>
+                        <p><strong>广西、云南、贵州、<strong><strong>湖南</strong></strong></strong></p>
+                        <p>陈业燕 13877180692<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2355783315&amp;site=qq&amp;menu=yes" target="_blank"><img title="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:2355783315:51" alt="点击这里给我发消息" border="0"><br></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; QQ:2355783338<br><strong><br>广东、江西、福建、上海、贵州、江苏、浙江、北京、甘肃、安徽、陕西、<strong>四川、天津、湖北、辽宁、吉林、山西、<strong>山东、河南、河北、海南</strong></strong></strong><br><br>杭迺懿 18978849022<strong><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2355746054&amp;site=qq&amp;menu=yes" target="_blank"><img title="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:2355746054:51" alt="点击这里给我发消息" width="79" height="25"></a><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong>&nbsp; 13481109710<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; QQ:2355746054</p>
+                        <p><strong>&nbsp;</strong></p>
+                        <p><strong>&nbsp; &nbsp; &nbsp;</strong></p>
+                    </div>
+                </div>
+                <div class="xx_mar_t_20">
+                    <img src="img/yk_1.jpg" width="100%" height="176">
+                </div>
+                <div class="xx_pd_15 xx_bg_white xx_mar_t_20">
+                    <div>
+                        <p><strong>广西、云南、贵州、<strong><strong>湖南</strong></strong></strong></p>
+                        <p>陈业燕 13877180692<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2355783315&amp;site=qq&amp;menu=yes" target="_blank"><img title="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:2355783315:51" alt="点击这里给我发消息" border="0"><br></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; QQ:2355783338<br><strong><br>广东、江西、福建、上海、贵州、江苏、浙江、北京、甘肃、安徽、陕西、<strong>四川、天津、湖北、辽宁、吉林、山西、<strong>山东、河南、河北、海南</strong></strong></strong><br><br>杭迺懿 18978849022<strong><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2355746054&amp;site=qq&amp;menu=yes" target="_blank"><img title="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:2355746054:51" alt="点击这里给我发消息" width="79" height="25"></a><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong>&nbsp; 13481109710<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; QQ:2355746054</p>
+                        <p><strong>&nbsp;</strong></p>
+                        <p><strong>&nbsp; &nbsp; &nbsp;</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+  <!--底部-->
+    <div class="footer  pure-g xx_mar_t_20 xx_border_gray">
+        <div class="xx_mar_auto pure-u-1 title xx_w_1180">
+            <a href="">华讯行业网</a>
+            <a href="">松香网</a>
+            <a href="">华讯通</a>
+            <a href="">华讯通</a>
+            <a href="">华讯通</a>
+            <a href="">华讯通</a>
+            <a href="">华讯通</a>
+            <a href="">华讯通</a>
+        </div>
+        <div class="xx_mar_auto pure-u-1 content">
+            <a href="">集团简介</a>
+            <a href="">|</a>
+            <a href="">关于本网</a>
+            <a href="">|</a>
+            <a href="">企业文化</a>
+            <a href="">|</a>
+            <a href="">联系我们</a>
+            <a href="">|</a>
+            <a href="">诚聘英才</a>
+            <a href="">|</a>
+            <a href="">本网导航</a>
+            <a href="">|</a>
+            <a href="">免责声明</a>
+            <a href="">|</a>
+            <a href="">ENGLISH</a>
+        </div>
+        <div class="xx_mar_auto pure-u-1 content">
+            <a href="">Copyright © 2000-2018 Sinoinfo Ecommerce Inc. All rights reserved</a>
+        </div>
+        <div class="xx_mar_auto pure-u-1 content">
+            <a href="">广西华讯信息技术股份有限公司版权所有</a>
+        </div>
+        <div class="xx_mar_auto pure-u-1 content">
+            <a href="">备案号: 桂ICP备15007906号-11 桂公网安备 45010302000299号</a>
+        </div>
+        <div class="xx_mar_auto pure-u-1 content">
+            <a href="">电话：0771-5553301 传真：0771-5553302</a>
+        </div>
+        <div class="xx_mar_auto pure-u-1 content">
+            <a href="">网址：www.rosin-china.com 邮箱：rosin@rosin-china.com</a>
+        </div>
+
+    </div>
+
+
+</body>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#reg-form').easyform();
+});
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

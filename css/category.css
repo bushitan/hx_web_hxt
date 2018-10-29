@@ -1,7 +1,7 @@
 
 .category {
     margin-top:20px;
-    padding: 20px 0 0
+    padding: 20px 0 0;
 }
 
 .category .title{
@@ -13,8 +13,8 @@
 .category a{
     /*float: left;*/
     line-height: 42px;
-/*     font-size: 1em; */
-    padding:0 10px; 
+    /*     font-size: 1em; */
+    /* padding:0 10px; */
 }
 
 .category .sub_title{

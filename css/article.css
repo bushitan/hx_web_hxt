@@ -1,0 +1,47 @@
+
+.article {
+    margin-top:20px;
+    /* padding: 20px 0 0; */
+}
+.article .path{
+    font-size: 0.9em;
+
+}
+
+.article .title{
+    /*float: left;*/
+    line-height: 35px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: #f16609;
+}
+
+.article .sub_title {
+    text-align: center;
+    font-size: 0.8em;
+
+}
+.article .sub_title span{
+    line-height: 35px;
+    /*font-size: 1em;*/
+    padding:0 5px;
+}
+.article .content{
+    padding-top: 15px;
+    font-size: 0.9em;
+}
+
+/*ндубср╡Ю╧Ц╦Ф*/
+.article .summary{
+    font-size: 0.9em;
+
+}
+
+
+
+/*.category .select {*/
+    /*font-weight: bolder;*/
+    /*color: #f6ab00;*/
+/*}*/
+
