@@ -51,14 +51,14 @@
 
 
 /*����ģ��*/
-.news .trade .title{
+.news .excel .title{
     padding: 15px 15px 0;
     font-size: 0.8em;
     text-align: center;
     line-height: 25px;
 }
 
-.news .trade .content{
+.news .excel .content{
     padding: 0 15px ;
     font-size: 0.8em;
     text-align: center;

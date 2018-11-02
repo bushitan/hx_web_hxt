@@ -1,5 +1,5 @@
 .trade{
-    margin-top:20px;
+     margin-top:20px;
 }
 
 .trade .title{
@@ -18,6 +18,6 @@
 
 .trade .node{
     text-align: center;
-    width: 206px;
-    margin:0 10px;
+    /*width: 206px;*/
+    /*margin:0 10px;*/
 }
