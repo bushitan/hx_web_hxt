@@ -355,59 +355,46 @@
 
                             <!--账户-->
                             <div class="title xx_border_gray ">发布信息</div>
-                            <div class="node">
-                                <div ><label>*</label>产品名称</div>
-                                <input name="uid" type="text" id="" easyform="length:4-16;char-normal;real-time;" message="用户名必须为4—16位的英文字母或数字" easytip="disappear:lost-focus;theme:blue;" ajax-message="用户名已存在!">
-                            </div>
-                            <div class="node">
-                                <div ><label>*</label>供求类型</div>
-                                <select name="CountryCode" id="">
-                                    <option value="CN" selected="selected">北京</option>
-                                    <option value="US">天津</option>
-                                    <option value="CA">广西</option>
-                                    <option value="KR">广州</option>
-                                </select>
-                            </div>
-                            <div class="node">
-                                <div><label>*</label>产品图片</div>
-                                <image></image>
-                                <input name="uid" type="text" id="" message="" ajax-message="" easyform="length:4-16;char-normal;real-time;"  easytip="disappear:lost-focus;theme:blue;" >
-                                <span>(输入与上面相同的密码，以进行验证。)</span>
-                            </div>
-                            <div class="node">
-                                <div><label>*</label>姓氏</div>
-                                <input name="uid" type="text" id="" message="" ajax-message="" easyform="length:4-16;char-normal;real-time;"  easytip="disappear:lost-focus;theme:blue;" >
+                                <div class="node">
+                                    <div ><label>*</label>产品名称</div>
+                                    <input name="uid" type="text" id="" easyform="length:4-16;char-normal;real-time;" message="用户名必须为4—16位的英文字母或数字" easytip="disappear:lost-focus;theme:blue;" ajax-message="用户名已存在!">
+                                </div>
+                                <div class="node">
+                                    <div ><label>*</label>供求类型</div>
+                                    <select name="CountryCode" id="">
+                                        <option value="CN" selected="selected">北京</option>
+                                        <option value="US">天津</option>
+                                        <option value="CA">广西</option>
+                                        <option value="KR">广州</option>
+                                    </select>
+                                </div>
+                                <div class="node">
+                                    <div><label>*</label>产品图片</div>
+                                    <img src="" class="cover_img"/>
+                                    <input name="uid" type="file" id="" message="" ajax-message="" easyform="length:4-16;char-normal;real-time;"  easytip="disappear:lost-focus;theme:blue;" >
+                                </div>
+                                <div class="node">
+                                    <div><label>*</label>规格</div>
+                                    <input name="uid" type="text" id="" message="" ajax-message="" easyform="length:4-16;char-normal;real-time;"  easytip="disappear:lost-focus;theme:blue;" >
 
-                                <div><label>*</label>名字</div>
-                                <input name="uid" type="text" id="" message="" ajax-message="" easyform="length:4-16;char-normal;real-time;"  easytip="disappear:lost-focus;theme:blue;" >
-                            </div>
-                            <div class="node">
-                                <div class="name">Email地址</div>
-                                <input name="uid" type="text" id="" message="" ajax-message="" easyform="length:4-16;char-normal;real-time;"  easytip="disappear:lost-focus;theme:blue;" >
-                            </div>
+                                    <div><label>*</label>质量等级</div>
+                                    <input name="uid" type="text" id="" message="" ajax-message="" easyform="length:4-16;char-normal;real-time;"  easytip="disappear:lost-focus;theme:blue;" >
+                                </div>
+                                <div class="node">
+                                    <div class="name">包装</div>
+                                    <input name="uid" type="text" id="" message="" ajax-message="" easyform="length:4-16;char-normal;real-time;"  easytip="disappear:lost-focus;theme:blue;" >
+                                </div>
+                                <div class="node">
+                                    <div class="name">内容</div>
+                                </div>
+                                <div class="node">
+                                    <textarea></textarea>
+                                </div>
 
-
-                            <!--账户-->
-                            <div class="title xx_border_gray xx_mar_t_20">基本资料</div>
-                            <div class="node">
-                                <div ><label>*</label>性别</div>
-                                &nbsp;&nbsp;
-                                <input type="radio" name="sex"><span>男</span>
-                                &nbsp;&nbsp;
-                                <input type="radio" name="sex"><span>女</span>
-                            </div>
-                            <div class="node">
-                                <div class="name">职务</div>
-                                <input name="uid" type="text" id="" message="" ajax-message="" easyform="length:4-16;char-normal;real-time;"  easytip="disappear:lost-focus;theme:blue;" >
-                            </div>
-                            <div class="node">
-                                <div class="name">手机</div>
-                                <input name="uid" type="text" id="" message="" ajax-message="" easyform="length:4-16;char-normal;real-time;"  easytip="disappear:lost-focus;theme:blue;" >
-                            </div>
 
                             <div class="buttons">
-                                <input value="注 册" type="submit" style="margin-right:20px; margin-top:20px;">
-                                <input value="我有账号，我要登录" type="button" style="margin-right:45px; margin-top:20px;">
+                                <input value="发布" type="submit" style="margin-right:20px; margin-top:20px;">
+                                <!--<input value="我有账号，我要登录" type="button" style="margin-right:45px; margin-top:20px;">-->
                             </div>
                         </form>
 
