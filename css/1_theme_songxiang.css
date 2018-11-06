@@ -79,7 +79,7 @@
 }
 
     /*��½��ť��ɫ*/
-.skin_login,.skin_register{
+.skin_btn ,.skin_login,.skin_register{
     display: inline-block;
     width: 103px;
     height: 28px;
@@ -89,7 +89,7 @@
     /*border: 1px solid #f6ab00;*/
     border: 1px solid #f6ab00;
 }
-.skin_login{
+.skin_login ,.skin_btn{
     /*background: #f6ab00;*/
     background-color: #f6ab00;
     color: #fff;

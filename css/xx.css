@@ -30,6 +30,12 @@ body{
 
 .xx_color_white{    color: #fff !important;}
 
+.xx_text_align_right{
+    text-align: right;
+}
+.xx_text_align_center{
+    text-align: center;
+}
 
 .xx_pd_15{    padding:15px;}
 .xx_pd_tb_10{    padding:10px 0;}
@@ -45,6 +51,7 @@ body{
 .xx_mar_r_20{    margin-right: 20px;}
 .xx_mar_r_40{    margin-right: 40px;}
 .xx_mar_t_20{    margin-top: 20px;}
+.xx_mar_t_10{    margin-top: 10px;}
 .xx_mar_b_20{    margin-bottom:20px;}
 
 .xx_border_gray{    border-top:1px solid #DFDFDF;}
@@ -61,12 +68,15 @@ body{
 .xx_w_220{    width: 220px;}
 .xx_w_180{    width: 180px;}
 .xx_w_175{    width: 175px;}
+.xx_w_167{    width: 167px;}
 .xx_w_160{    width: 150px;}
 .xx_w_147{    width: 147px;}
 .xx_w_100{    width: 100px;}
 .xx_h_206{    height: 206px;}
-.xx_h_120{    height: 120px;}
+.xx_h_136{    height: 136px;}
 .xx_h_129{    height: 129px;}
+.xx_h_120{    height: 120px;}
+.xx_h_71{    height: 71px;}
 
 
 .xx_button{

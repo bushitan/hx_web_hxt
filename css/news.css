@@ -172,3 +172,62 @@
     margin: auto;
     padding: 10px;
 }
+
+
+/*多图+标题*/
+.news .img_grid{
+    text-align: center;
+}
+.news .img_grid img{
+    max-width: 90%;
+    width: auto;
+    height: 100%;
+}
+
+.news .img_grid .des{
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    font-size: 0.9em;
+    color: #888888;
+}
+
+/*投票*/
+.news .vote{
+    font-size: 0.8em;
+    text-align: center;
+}
+.news .vote .vote_node{
+    margin-top: 5px;
+
+}
+.news .vote .vote_process{
+    margin: 0 3px 0 15px;
+    width: 100px;
+    background-color: #888888;
+}
+.news .vote .vote_real{
+    float: right;
+    width: 80px;
+    background-color: #f6ab00;
+}
+.news .vote .vote_ratio{
+    float: left;
+
+}
+.news .vote .vote_value {
+    float: right;
+}
+.news .vote .vote_btn{
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
