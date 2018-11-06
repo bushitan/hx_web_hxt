@@ -23,12 +23,19 @@
 
 .ad .title{
     text-align: center;
-    font-size: 0.9em;
+    font-size: 0.8em;
     line-height: 15px;
-
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+.ad .cat_title{
+    font-size: 1em;
+    font-weight: bolder;
+    text-align: left;
+    /*line-height: 26px;*/
+    height: 26px;
+
 }
 .ad img{
     width:auto;

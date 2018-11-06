@@ -52,7 +52,7 @@
 .skin_swiper_node{
     position: relative;
     /*padding: 9px 0 8px 20px;*/
-    height: 61px;
+    height: 71px;
 }
 .skin_swiper_node:hover .dialog{
     display: block;
