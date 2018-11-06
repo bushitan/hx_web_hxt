@@ -208,27 +208,39 @@
     text-align: right;
     color:#3c6db0;
 }
+.article .comment .comment_name{
+    display: inline-block;
+    width: 100px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.article .comment .comment_mark{
+    margin-top: 5px;
+    position: absolute;
+    /*float: left;.*/
+}
+.article .comment .comment_content{
+    width: 400px;
+    height: 200px;
+    margin-left: 105px;
+     border-radius: 8px;
+     box-shadow: inset 0 2px 5px #eee;
+     padding: 10px;
+     border: 1px solid #D4D4D4;
+     color: #333333;
+     margin-top: 5px;
+}
+.article .comment .comment_content:focus{
+    border:1px solid #50afeb;
+	outline:none;
+}
+.article .comment  .comment_qr{
+    width: 72px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.article .comment .comment_des {
+    font-size: 0.6em;
+    color: #888888;
+}
 
