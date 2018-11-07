@@ -8,8 +8,9 @@
     padding: 30px;
 }
 .footer .title a{
-    font-size: 1.15em;
-    padding: 30px 35px;
+    font-size: 1em;
+    font-weight: bold;
+    padding:0 10px 15px;
 }
 .footer .content{
     padding-bottom: 10px;
@@ -19,5 +20,14 @@
     padding: 8px 5px;
     font-size: 0.9em;
 }
+.footer .lite_img ,.footer .normal_img{
+    vertical-align:middle
+}
 
+.footer .lite_img{
+    
+}
 
+.footer .normal_img{
+    height:48px;
+}
