@@ -1,10 +1,10 @@
-
+﻿
 .news {
     /*padding-top: 10px;*/
     margin-top: 20px;
 }
 
-/*��ͨģ��*/
+
 .news  .title{
     line-height: 26px;
     height: 26px;
@@ -35,10 +35,6 @@
 }
 
 
-/*�ȵ�����*/
-/*.news .t_hot{*/
-
-/*}*/
 
 .news .t_hot .title{
     line-height: 26px;
@@ -50,7 +46,6 @@
 
 
 
-/*����ģ��*/
 .news .excel .title{
     padding: 15px 15px 0;
     font-size: 0.8em;
@@ -125,7 +120,6 @@
     float: right;
 }
 
-/*�м���*/
 .news .t_hot .title{
     height:90px;
     line-height: 30px;

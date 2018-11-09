@@ -1,21 +1,13 @@
 
+/*松香主题下的模块样式*/
 
-/* .skin_logo{
-    background:url("../img/logo.png");
-    border:1px solid #ffffff;
-    background-size:cover;
-    width:220px;
-    height:54px;
-} */
+/*主体文字颜色*/
 .skin_color{
     color: #f6ab00;
-
 }
 
-/*������*/
+/*搜索框*/
 .skin_search_input{
-    /*border: 2px solid #f6ab00;*/
-
     width: 420px;
     line-height: 36px;
     height: 34px;
@@ -35,26 +27,22 @@
     font-size: 14px;
     cursor: pointer;
     outline: none;
-    /*background: #f6ab00;*/
     background: #f6ab00;
 }
 
-/*tab�˵�����ɫ*/
+/*tab标题*/
 .skin_tab_title{
     width: 220px;
     line-height: 42px;
     color: #fff;
     font-size: 16px;
     text-align: center;
-    /*background: #f6ab00;*/
     background: #f6ab00;
 }
 
-/*���������˵�������ƶ�֮���ɫ*/
-
+/*轮播图*/
 .skin_swiper_node{
     position: relative;
-    /*padding: 9px 0 8px 20px;*/
     height: 71px;
 }
 .skin_swiper_node:hover .dialog{
@@ -63,22 +51,18 @@
 }
 
 .skin_swiper_node:hover{
-    /*background-color: #f6ab00;*/
     background-color: #f6ab00;
     color: #fff !important;
 }
 .skin_swiper_node:hover .title{
-    /*background-color: #f6ab00;*/
-    /*background-color: #f6ab00;*/
     color: #fff !important;
 }
 .skin_swiper_node:hover .content{
-    /*background-color: #f6ab00;*/
-    /*background-color: #f6ab00;*/
     color: #fff !important;
 }
 
-    /*��½��ť��ɫ*/
+
+/*按钮、登陆、注册*/
 .skin_btn ,.skin_login,.skin_register{
     display: inline-block;
     width: 103px;
@@ -86,11 +70,9 @@
     text-align: center;
     line-height: 28px;
     font-size: 14px;
-    /*border: 1px solid #f6ab00;*/
     border: 1px solid #f6ab00;
 }
 .skin_login ,.skin_btn{
-    /*background: #f6ab00;*/
     background-color: #f6ab00;
     color: #fff;
     margin: 0 2px;
@@ -98,14 +80,11 @@
 }
 .skin_register{
     color: #f6ab00;
-    /*background-color: #f6ab00;*/
     border-radius: 5px;
 }
 
 
-/*Ŀ¼ѡ����ɫ*/
 .skin_category_select{
     font-weight: bolder;
-    /*color: #f6ab00;*/
     color: #f6ab00;
 }

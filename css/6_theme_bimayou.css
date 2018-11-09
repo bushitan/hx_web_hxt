@@ -1,18 +1,7 @@
 ﻿
+/*蓖麻油主题模块*/
 
-/* .skin_logo{
-    background:url("../img/logo.png");
-    border:1px solid #ffffff;
-    background-size:cover;
-    width:220px;
-    height:54px;
-} */
-
-
-/*������*/
 .skin_search_input{
-    /*border: 2px solid #f6ab00;*/
-
     width: 420px;
     line-height: 36px;
     padding: 0 10px;
@@ -31,26 +20,20 @@
     font-size: 14px;
     cursor: pointer;
     outline: none;
-    /*background: #f6ab00;*/
     background: #ffc581;
 }
 
-/*tab�˵�����ɫ*/
 .skin_tab_title{
     width: 220px;
     line-height: 42px;
     color: #fff;
     font-size: 16px;
     text-align: center;
-    /*background: #f6ab00;*/
     background: #ffc581;
 }
 
-/*���������˵�������ƶ�֮���ɫ*/
-
 .skin_swiper_node{
     position: relative;
-    /*padding: 9px 0 8px 20px;*/
     height: 61px;
 }
 .skin_swiper_node:hover .dialog{
@@ -59,18 +42,13 @@
 }
 
 .skin_swiper_node:hover{
-    /*background-color: #f6ab00;*/
     background-color: #ffc581;
     color: #fff !important;
 }
 .skin_swiper_node:hover .title{
-    /*background-color: #f6ab00;*/
-    /*background-color: #ffc581;*/
     color: #fff !important;
 }
 .skin_swiper_node:hover .content{
-    /*background-color: #f6ab00;*/
-    /*background-color: #ffc581;*/
     color: #fff !important;
 }
 
@@ -82,26 +60,20 @@
     text-align: center;
     line-height: 28px;
     font-size: 14px;
-    /*border: 1px solid #f6ab00;*/
     border: 1px solid #ffc581;
 }
 .skin_login{
-    /*background: #f6ab00;*/
     background-color: #ffc581;
     color: #fff;
     margin: 0 2px;
     border-radius: 5px;
 }
 .skin_register{
-    /*color: #f6ab00;*/
-    /*background-color: #ffc581;*/
     border-radius: 5px;
 }
 
 
-/*Ŀ¼ѡ����ɫ*/
 .skin_category_select{
     font-weight: bolder;
-    /*color: #f6ab00;*/
     color: #ffc581;
 }

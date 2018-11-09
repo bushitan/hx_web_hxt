@@ -1,3 +1,4 @@
+/*½»Ò×Ä£¿é*/
 .trade{
      margin-top:20px;
 }
@@ -18,6 +19,15 @@
 
 .trade .node{
     text-align: center;
-    /*width: 206px;*/
-    /*margin:0 10px;*/
+}
+
+.trade .arrow_up , .trade .arrow_down{
+     font-weight:bolder;
+}
+.trade .arrow_up{
+    color:red;    
+}
+
+.trade .arrow_down{
+    color:green;
 }
