@@ -1,4 +1,4 @@
-﻿
+
 .news {
     /*padding-top: 10px;*/
     margin-top: 20px;
@@ -7,7 +7,7 @@
 
 .news  .title{
     line-height: 26px;
-    height: 26px;
+    /* height: 26px; */
     font-size: 1em;
 }
 .news  .title .select{
@@ -35,14 +35,6 @@
 }
 
 
-
-.news .t_hot .title{
-    line-height: 26px;
-    font-size: 1em;
-}
-.news .t_hot .title .select{
-    font-weight: bolder;
-}
 
 
 
@@ -121,9 +113,10 @@
 }
 
 .news .t_hot .title{
-    height:90px;
+    /* height:90px; */
     line-height: 30px;
-    padding:2px 0 8px;
+    padding:2px 0 12px;
+    font-weight: bolder;
 }
 .news .t_hot .title a{
     display: block;

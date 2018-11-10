@@ -1,4 +1,4 @@
-/*╫╩рвдё©И*/
+/*О©╫О©╫О©╫О©╫дёО©╫О©╫*/
 .trade{
      margin-top:20px;
 }
@@ -15,19 +15,15 @@
     font-size: 0.8em;
     text-align: center;
     line-height: 25px;
+    height:25px;
 }
 
 .trade .node{
     text-align: center;
 }
 
-.trade .arrow_up , .trade .arrow_down{
-     font-weight:bolder;
-}
-.trade .arrow_up{
-    color:red;    
-}
+.arrow_img{
 
-.trade .arrow_down{
-    color:green;
+    width:25px;
+    height: 25px;
 }
