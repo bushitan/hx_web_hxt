@@ -189,26 +189,29 @@
     </div>
 
 
-    <div class="login  pure-g ">
+    <div class="login  pure-g "  id="reg-form" >
         <div class="xx_mar_auto xx_w_1180 ">
             <div class="box pure-u-1 xx_w_380  ">
                 <div class="title "> 会员登录 </div>
-                <div>
-                    <input class="account" name="uid" type="text" placeholder="请输入账号" id="" easyform="length:4-16;char-normal;real-time;" message="用户名必须为4—16位的英文字母或数字" easytip="disappear:lost-focus;theme:blue;" ajax-message="用户名已存在!">
+                <div class="node">
+                    <div class="pure-u-1-6 des">账号</div>
+                    <input class="account pure-u-2-3" name="uid" type="text" placeholder="请输入账号" id="" easyform="length:4-16;char-normal;real-time;" message="用户名必须为4—16位的英文字母或数字" easytip="disappear:lost-focus;theme:blue;" ajax-message="用户名已存在!">
                 </div>
-                <div>
-                    <input class="password" name="uid" type="text" placeholder="请输入密码"  id="" easyform="length:4-16;char-normal;real-time;" message="用户名必须为4—16位的英文字母或数字" easytip="disappear:lost-focus;theme:blue;" ajax-message="用户名已存在!">
+                <div class="node">
+                    <div class="pure-u-1-6 des">密码</div>
+                    <input class="password pure-u-2-3" name="uid" type="text" placeholder="请输入密码"  id="" easyform="length:4-16;char-normal;real-time;" message="用户名必须为4—16位的英文字母或数字" easytip="disappear:lost-focus;theme:blue;" ajax-message="用户名已存在!">
                 </div>
 
                 <div class="node">
-                    <input name="uid" type="text" placeholder="请输入验证码" id="" message="" ajax-message="" easyform="length:4-16;char-normal;real-time;"  easytip="disappear:lost-focus;theme:blue;" >
-                    <img src="img/banner.jpg"/>
-                    <span class="change_qr"> 换一张</span>
+                    <div class="pure-u-1-6 des">验证码</div>
+                    <input name="uid" class="pure-u-1-6" type="text" placeholder="验证码" id="" message="" ajax-message="" easyform="length:4-16;char-normal;real-time;"  easytip="disappear:lost-focus;theme:blue;" >
+                    <img class="qr_img" src="img/banner.jpg"/>
+                    <span class="change_qr des"> 换一张</span>
                 </div>
-                <div class="auto">
-                    <input type="checkbox" class="btns" style="font-family:'Microsoft Yahei','微软雅黑',Tahoma,Arial,Helvetica,STHeiti" id="btn_login" value="登  录">
-                    保持在登陆状态
-                </div>
+                <!--<div class="auto">-->
+                    <!--<input type="checkbox" class="btns" style="font-family:'Microsoft Yahei','微软雅黑',Tahoma,Arial,Helvetica,STHeiti" id="btn_login" value="登  录">-->
+                    <!--保持在登陆状态-->
+                <!--</div>-->
                 <div class="buttons">
                     <input class="btn_login" value="登 陆" type="submit" style=" margin-top:20px;">
                     <input class="btn_register" value="注 册" type="button" style=" margin-top:20px;">

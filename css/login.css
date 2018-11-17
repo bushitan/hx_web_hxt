@@ -28,18 +28,36 @@
     font-size: 0.8em;
 
 }
+
+/*input节点*/
+ .login .node{
+     margin-top: 10px;
+
+ }
+.login .des{
+     line-height: 42px;
+    font-size: 0.9em;
+    /*color: #000000;*/
+}
 /*自动登录*/
 .login .account , .login .password{
-    width: 358px;
+    /*width: 358px;*/
 }
 
 /*验证码*/
-.login .node img{
+.login .qr_img{
     margin:0 5px ;
     width: 72px;
     height: 28px;
     display: inline-block; vertical-align: middle;
 }
+
+.login .get_qr_btn{
+    margin:4px 0 0 4px;
+
+}
+
+
 
 .login .buttons{text-align:right;}
 .btn_login , .btn_register{ margin :20px 0 0 20px;}
@@ -50,7 +68,6 @@
     padding:10px;
     border:1px solid #D4D4D4;
     color:#333333;
-    margin-top:10px;
 }
 .login input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus ,select:focus {
     border:1px solid #50afeb;

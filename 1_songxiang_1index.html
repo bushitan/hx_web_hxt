@@ -1001,15 +1001,40 @@
 
                 <div class="info">
                     <div class="pure-g ">
-                        <div class="pure-u-1-2 buy click" ><a >供应</a></div>
-                        <div class="pure-u-1-2 sell " ><a class="">求购</a></div>
+                        <div class="pure-u-1-2 buy " ><a>供应</a></div>
+                        <div class="pure-u-1-2 sell click" ><a class="">求购</a></div>
                     </div>
-                    <div class="article">
+                    <div class="article buy_content">
                         <div>  9月25日广西松香供应价格</div>
                         <div>  9月26日广西松香供应价格</div>
                         <div>  9月27日广西松香供应价格</div>
                     </div>
+                    <div class="article sell_content" style="display: none;">
+                        <div>  9月25日广西松香求购价格</div>
+                        <div>  9月26日广西松香求购价格</div>
+                        <div>  9月27日广西松香求购价格</div>
+                    </div>
                 </div>
+                <script>
+                     $(".buy").click(function (e) {
+                         remove()
+                          $(".sell").addClass("click");
+                         $(".sell_content").hide();
+                         $(".buy_content").show();
+
+                     })
+                     $(".sell").click(function (e) {
+                         remove()
+                          $(".buy").addClass("click");
+                         $(".buy_content").hide();
+                         $(".sell_content").show();
+                     })
+                    function remove(){
+                          $(".buy").removeClass("click");
+                          $(".sell").removeClass("click");
+                    }
+                </script>
+
 
                  <div class="icon pure-g xx_border_gray">
                      <div class="pure-u-1-3" >

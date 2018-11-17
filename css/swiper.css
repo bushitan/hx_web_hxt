@@ -112,26 +112,6 @@
 .swiper .hi{
     line-height: 48px;
 }
-/*.swiper .login,.swiper .register{*/
-    /*display: inline-block;*/
-    /*width: 103px;*/
-    /*height: 28px;*/
-    /*text-align: center;*/
-    /*line-height: 28px;*/
-    /*font-size: 14px;*/
-    /*border: 1px solid #f6ab00;*/
-/*}*/
-/*.swiper .login{*/
-    /*background: #f6ab00;*/
-    /*color: #fff;*/
-    /*margin: 0 2px;*/
-    /*border-radius: 5px;*/
-/*}*/
-/*.swiper .register{*/
-    /*color: #f6ab00;*/
-    /*border-radius: 5px;*/
-/*}*/
-
 .swiper .info{
     padding:20px 0;
 }
@@ -141,7 +121,9 @@
     text-align: center;
     /*margin-bottom: 15px;*/
     border-top: 1px solid #E4E4E4;
+    cursor:pointer;
 }
+
 .swiper .sell{
 }
 .swiper .click{
