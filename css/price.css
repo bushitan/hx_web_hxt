@@ -23,6 +23,11 @@
     text-align: center;
 }
 
+.price .cover img{
+    width: auto;
+    /*height: auto;*/
+}
+
 .price .des{
     font-size: 1em;
     text-align: center;
