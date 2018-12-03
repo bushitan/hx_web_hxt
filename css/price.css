@@ -1,0 +1,84 @@
+/*交易模块*/
+.price{
+     margin-top:20px;
+}
+.price .line{
+    display: inline-block;
+    vertical-align: middle;
+    width: 5px;
+    height: 15px;
+    background-color: #f6ab00;
+}
+.price .title{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.1em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+
+.price .cover{
+    margin: 10px 0;
+    text-align: center;
+}
+
+.price .des{
+    font-size: 1em;
+    text-align: center;
+}
+.price .org{
+    text-decoration:line-through;
+    text-align: center;
+    font-size: 0.7em;
+    color: #888;
+    margin-top: 10px;
+}
+.price .name{
+    font-size: 0.5em;
+}
+.price .current{
+    font-size: 1.5em;
+    text-align: center;
+    color: #f6ab00;
+}
+.price .btn{
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+.price_info{
+     margin-top:20px;
+
+}
+.price_info .title{
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-align: center;
+}
+.price_info .name{
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    text-align: center;
+}
+.price_info .current{
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+.price_info .pay{
+    margin-top: 10px;
+    text-align: right;
+}
+.price_info .check ,.price_info .protocol ,.price_info .xx_button{
+
+    display: inline-block;
+    vertical-align: middle;
+}
+.price_info .protocol {
+    color: #f6ab00;
+    margin-right: 15px;
+    
+}
