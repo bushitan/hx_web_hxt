@@ -40,7 +40,7 @@
     color: red;
 }
 .admin_info .name{
-     display: block;
+     /*display: block;*/
     text-align: right;
     padding:5px 25px 0 0;
     line-height: 40px;
