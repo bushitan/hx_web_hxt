@@ -1,0 +1,381 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta name="viewport" content="width=1280,initial-scale=0.27" />
+    <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
+    <title>华讯后台管理系统</title>
+
+    <!--<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">-->
+
+    <!--pure-min.css-->
+        <link rel="stylesheet" href="css/pure-min.css">
+
+    <!--[if lte IE 8]>
+        <!--<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">-->
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <!--<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">-->
+    <!--<![endif]-->
+
+
+        <!--[if lte IE 8]>
+            <!--<link rel="stylesheet" href="https://purecss.io/combo/1.18.13?/css/layouts/blog-old-ie.css">-->
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <!--<link rel="stylesheet" href="https://purecss.io/combo/1.18.13?/css/layouts/blog.css">-->
+        <!--<![endif]-->
+
+    <link rel="stylesheet" href="css/xx.css">
+    <link rel="stylesheet" href="css/1_theme_songxiang.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/tab.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <link rel="stylesheet" href="css/admin.css">
+
+
+    <!--<link rel="stylesheet" href="css/category.css">-->
+    <!--<link rel="stylesheet" href="css/swiper.css">-->
+    <!--<link rel="stylesheet" href="css/news.css">-->
+    <!--<link rel="stylesheet" href="css/ad.css">-->
+    <!--<link rel="stylesheet" href="css/summary.css">-->
+    <!--<link rel="stylesheet" href="css/trade.css">-->
+
+    <!-- 首先引入jQuery和unslider -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/unslider.min.js"></script>
+    <script type="text/javascript" src="js/easyform.js"></script>
+    <!-- <script src="http://www.jq22.com/demo/unslider-150203225543/jquery-1.11.1.min.js"></script>-->
+    <!-- <script src="http://www.jq22.com/demo/unslider-150203225543/unslider.min.js"></script>-->
+    <!--[if lt IE 9]>
+        <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>-->
+    <![endif]-->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-41480445-1', 'purecss.io');
+    ga('send', 'pageview');
+
+        $(document).ready(function(e) {
+            var unslider04 = $('#hot').unslider({
+                dots: true
+            }),
+            data04 = unslider04.data('unslider');
+//            $('.unslider-arrow04').click(function() {
+//                var fn = this.className.split(' ')[1];
+//                data04[fn]();
+//            });
+
+            var unsliderad = $('#ad').unslider({
+                dots: true
+            }),
+            dataad = unsliderad.data('unslider');
+//            $('.unslider-arrow04').click(function() {
+//                var fn = this.className.split(' ')[1];
+//                data04[fn]();
+//            });
+        });
+    </script>
+</head>
+<body>
+
+<!--     头部 -->
+    <div class="header pure-g ">
+        <div class="xx_mar_auto xx_w_1180">
+            <div class="pure-u-1 menu_list">
+                 <div class="node touch">
+                    English
+                    <ul class="header_help">
+                        <li>
+                            <a href="javascript:;">
+                                한글
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                中文
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="node touch">
+                    客户服务
+                    <ul class="header_help">
+                        <li>
+                            <a href="javascript:;">
+                                帮助说明：
+                            </a>
+                            <a href="" target="_blank" class="contact">
+                                帮助中心
+                            </a>
+                            &nbsp;
+                            <a href="" target="_blank" class="contact">
+                                新手指南
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                在线客服：
+                            </a>
+                            <a href="javascript:;" id="toolbar-toptell" class="contact">
+                                联系在线客服
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                客服热线：0771-5553301 （8:30-17:30）
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" node">|</div>
+                <a class=" node" href="">我的设置</a>
+                <a class=" node" href="">APP</a>
+                <a class=" node" href="">小程序</a>
+            </div>
+        </div>
+    </div>
+
+<!-- 搜索 -->
+<!--2 搜索框-->
+    <div class="search  xx_bg_white pure-g">
+        <div class="xx_mar_auto xx_w_1180">
+            <div class="pure-u-1-3  logo">
+                <img src="img/logo.png" alt="" width="100%" height="100%">
+            </div>
+            <div class="pure-u-1-3 tool ">
+                <div class="pure-g ">
+                    <input class="skin_search_input pure-u-1-2" type="text" placeholder="请输入类别 产地等搜索，例如：马尾松 广西" id="globalSearchInput" ref="globalSearchInput" maxlength="100">
+                    <button class="skin_search_btn pure-u-1-2" onclick="">搜索</button>
+                </div>
+            </div>
+            <div class="pure-u-1-3  qr">
+                <div class="title">小程序</div>
+                <img src="img/ewm.png" alt=""  width="70" height="70">
+                <div class="qr_large">
+                    扫码打开
+                    <br> 华讯生物圈小程序
+                        <img src="img/ewm.png" width="130" height="130">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+        <!--周述 月评 短信-->
+    <div class="admin  pure-g ">
+        <div class="xx_mar_auto xx_w_1180">
+
+            <div class="admin_menu pure-u-1-3 xx_w_180  xx_mar_r_20 xx_bg_white">
+                <div class="xx_pd_15 ">
+                    <div class="">
+                        <div class="main_menu">订单中心</div>
+                        <div class="sub_menu ">
+                            <a target="_self" class="skin_color">已购服务</a>
+                        </div>
+                        <div class="sub_menu">
+                            <a target="_self">我的订单</a>
+                        </div>
+                    </div>
+                    <div class="xx_border_gray">
+                        <div class="main_menu">账户设置</div>
+                        <div class="sub_menu">
+                            <a target="_self">账户信息</a>
+                        </div>
+                        <div class="sub_menu">
+                            <a target="_self">账户安全</a>
+                        </div>
+                        <div class="sub_menu">
+                            <a target="_self">账号绑定</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="admin_info pure-u-2-3 xx_w_960  ">
+                <div class="xx_pd_15 xx_bg_white xx_mar_b_20 ">账户信息</div>
+
+                <div class="xx_pd_15 xx_bg_white">
+                    <div class="map ">
+                        <div class="nav">
+                            <a>基本信息</a>
+                            <a  class="skin_color">地理位置</a>
+                        </div>
+                        <div class="xx_mar_t_20">
+                            <div>
+                                <input name="uid" type="text" id="" easyform="null" placeholder="电子邮箱">
+                                <input value="搜索" type="button"  class="primary"  >
+                            </div>
+                        </div>
+                         <div class="pure-g xx_mar_t_10">
+                            <div class="pure-u-2-3">
+                                <div  id="dituContent" class="map_baidu"></div>
+                            </div>
+                            <div class="pure-u-1-3">
+                                <div class="map_detail">
+                                    <div class="map_dialog xx_pd_15">
+                                        <div><strong>注意事项：</strong>地图数据只支持国内（不包括海上）的定位</div>
+                                    </div>
+                                    <div class="map_info xx_pd_15 xx_mar_t_10">
+                                        <div><strong>地图信息：</strong></div>
+                                        <div><strong>经度：</strong> <span>116.415622</span></div>
+                                        <div><strong>纬度：</strong> <span>30.75856</span></div>
+                                        <div><strong>缩放：</strong> <span>14级</span></div>
+                                        <div><strong>参考：</strong> <span>北京东城区1号</span></div>
+                                    </div>
+                                    <div class="map_btn  xx_mar_t_10">
+                                        <input value="采用当前位置" type="button"  class="primary"  >
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+  <!--底部-->
+    <div class="footer  pure-g xx_mar_t_20 xx_border_gray">
+        <div class="xx_mar_auto pure-u-1 title xx_w_1180">
+            <a href="">华讯行业网</a>
+            <a href="">松香网</a>
+            <a href="">华讯通</a>
+            <a href="">华讯通</a>
+            <a href="">华讯通</a>
+            <a href="">华讯通</a>
+            <a href="">华讯通</a>
+            <a href="">华讯通</a>
+        </div>
+        <div class="xx_mar_auto pure-u-1 content">
+            <a href="">集团简介</a>
+            <a href="">|</a>
+            <a href="">关于本网</a>
+            <a href="">|</a>
+            <a href="">企业文化</a>
+            <a href="">|</a>
+            <a href="">联系我们</a>
+            <a href="">|</a>
+            <a href="">诚聘英才</a>
+            <a href="">|</a>
+            <a href="">本网导航</a>
+            <a href="">|</a>
+            <a href="">免责声明</a>
+            <a href="">|</a>
+            <a href="">ENGLISH</a>
+        </div>
+        <div class="xx_mar_auto pure-u-1 content">
+            <a href="">Copyright © 2000-2018 Sinoinfo Ecommerce Inc. All rights reserved</a>
+        </div>
+        <div class="xx_mar_auto pure-u-1 content">
+            <a href="">广西华讯信息技术股份有限公司版权所有</a>
+        </div>
+        <div class="xx_mar_auto pure-u-1 content">
+            <a href="">备案号: 桂ICP备15007906号-11 桂公网安备 45010302000299号</a>
+        </div>
+        <div class="xx_mar_auto pure-u-1 content">
+            <a href="">电话：0771-5553301 传真：0771-5553302</a>
+        </div>
+        <div class="xx_mar_auto pure-u-1 content">
+            <a href="">网址：www.rosin-china.com 邮箱：rosin@rosin-china.com</a>
+        </div>
+
+    </div>
+
+
+</body>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#reg-form').easyform();
+});
+</script>
+
+
+<!--地图-->
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+    }
+
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(117.190466,40.03525);//定义一个中心点坐标
+        map.centerAndZoom(point,9);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+    var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+    map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+    var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+    map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+    var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+    map.addControl(ctrl_sca);
+    }
+
+
+    initMap();//创建和初始化地图
+</script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

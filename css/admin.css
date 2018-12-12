@@ -1,0 +1,206 @@
+
+.admin {
+    margin-top:20px;
+}
+.admin .path{
+    font-size: 0.9em;
+}
+
+
+.admin  .admin_menu{
+
+    font-size: 0.9em;
+    float: left;
+    height:100%;
+}
+
+.admin_menu .main_menu , .admin_menu .sub_menu{
+    margin: 10px 0;
+}
+.admin_menu .main_menu {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.admin_menu .sub_menu a{
+    font-size: 1em;
+    position: relative;
+    padding-left: 25px;
+}
+
+
+ .admin_info{
+     font-size: 0.9em;
+ }
+
+.admin_info .nav a{
+    margin-right: 15px;
+}
+
+.admin_info label{
+    color: red;
+}
+.admin_info .name{
+     display: block;
+    text-align: right;
+    padding:5px 25px 0 0;
+    line-height: 40px;
+}
+
+.admin_info .summary .cover_img{
+    margin:8px 5px 3px 0;
+    width: 160px;
+    height: 128px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #eee;
+
+}
+.admin_info .summary img{
+    margin: auto;
+    width: auto;
+    height: 100%;
+}
+.admin_info .summary{
+}
+.admin_info .summary span{
+    font-size: 0.6em;
+    color: #888888;
+}
+.admin_info .summary  textarea{
+    width: 100%;
+    height: 80px;
+}
+
+/******************************地图*****************************/
+.admin_info .map{
+    line-height: 1.8em;
+}
+.admin_info .map_baidu{
+    width:100%;
+    height:400px;
+    border:#ccc solid 1px;
+}
+.admin_info .map_detail{
+    padding: 0 0 0 15px;
+}
+.admin_info .map_dialog{
+    background-color: #fff6e6;
+}
+.admin_info .map_info{
+    background-color: #eaf4ff;
+    font-size: 1em;
+}
+.admin_info .map_btn{
+    /*background-color: #fff6e6;*/
+}
+
+/******************************绑定*****************************/
+.admin_info .bind{
+    border :1px solid #DFDFDF;
+}
+.admin_info .bind .wx_icon{
+    width: 48px;
+    height: 48px;
+}
+.admin_info  .bind_img{
+    text-align: center;
+}
+.admin_info .bind_title{
+    font-size: 1.5em;
+    font-weight: bolder;
+    line-height: 48px;
+}
+.admin_info .bind_des{
+    font-size: 1em;
+    line-height: 48px;
+    height: 48px;
+    text-align: left;
+}
+
+.admin_info .bind_btn{
+    font-size: 0.9em;
+    line-height: 48px;
+    text-align: right;
+}
+.admin_info  .green{    color:#09bb07}
+.admin_info  .red{    color:#e64340}
+.admin_info  .yellow{    color:#f6ab00}
+.admin_info  .line{
+    border-left:1px solid #DFDFDF;
+    width: 25px;
+    height: 100%;
+    content: "";
+    float: right;
+}
+
+
+/******************************订单*****************************/
+.admin_info .order_name{
+    background-color: #888;
+    font-weight: bolder;
+    text-align: center;
+    color: #ffffff;
+}
+.admin_info .order_value_light,.admin_info .order_value_black{
+    padding: 5px 15px;
+    text-align: center;
+}
+.admin_info .order_value_light{
+    background-color: #efefef;
+    color: #000;
+}
+.admin_info .order_value_black{
+    background-color: #dedede;
+    color: #000;
+}
+
+
+
+/******************************按钮*****************************/
+.admin_info .primary{
+    background-color:#3c6db0;
+}
+.admin_info .save{
+    text-align: center;
+    /*padding: 20px;*/
+}
+
+.admin input[type="text"],
+.admin input[type="password"],
+.admin input[type="email"] ,
+.admin select,
+.admin textarea{
+    border-radius:8px;
+    box-shadow:inset 0 2px 5px #eee;
+    padding:10px;
+    border:1px solid #D4D4D4;
+    color:#333333;
+    margin-top:5px;
+}
+.admin input[type="text"]:focus,
+.admin input[type="password"]:focus,
+.admin input[type="email"]:focus ,
+.admin select:focus ,
+.admin textarea:focus{
+    border:1px solid #50afeb;
+	outline:none;
+}
+.admin input[type="button"],
+.admin input[type="submit"] {
+    padding:7px 15px;
+    text-align:center;
+    border-radius:5px;
+    overflow:hidden;
+    min-width:80px;
+    border:none;
+    color:#FFF;
+    box-shadow:1px 1px 1px rgba(75,75,75,0.3);
+}
+.admin input[type="button"]:hover,
+.admin input[type="submit"]:hover {
+    background-color:#5a88c8;
+}
+.admin input[type="button"]:active,
+.admin input[type="submit"]:active {
+    background-color:#5a88c8;
+}
