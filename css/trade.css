@@ -4,15 +4,33 @@
 }
 
 .trade .title{
-    padding: 15px 15px 0;
-    font-size: 0.8em;
+    padding: 3px 15px 0;
+    font-size: 0.5em;
     text-align: center;
     line-height: 25px;
+    /*font-weight: bolder;*/
 }
+.trade  .tab_title{
+    line-height: 26px;
+    padding: 15px 15px 0;
+    font-size: 1.2em;
+    /*text-align: center;*/
+}
+.trade  .tab_title span{
+    margin-right: 5px;
+}
+.trade  .more{
+    float:right;
+    font-size: 0.7em;
+}
+.trade  .tab_title .select{
+    font-weight: bolder;
+}
+
 
 .trade .content{
     padding: 0 15px ;
-    font-size: 0.8em;
+    font-size: 0.5em;
     text-align: center;
     line-height: 25px;
     height:25px;
@@ -26,6 +44,4 @@
 
     width:1em;
     height: 1em;
-    /*width:25px;*/
-    /*height: 25px;*/
 }

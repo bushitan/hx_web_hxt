@@ -61,6 +61,7 @@ body{
 .xx_w_780{    width: 780px;}
 .xx_w_750{    width: 750px;}
 .xx_w_580{    width: 580px;}
+.xx_w_480{    width: 480px;}
 .xx_w_380{    width: 380px;}
 .xx_w_360{    width: 360px;}
 .xx_w_280{    width: 280px;}
@@ -74,6 +75,9 @@ body{
 .xx_w_147{    width: 147px;}
 .xx_w_100{    width: 100px;}
 
+.xx_h_500{height: 500px;}
+.xx_h_480{height: 480px;}
+.xx_h_400{height: 400px;}
 .xx_h_226{height: 226px;}
 .xx_h_206{height: 206px;}
 .xx_h_170{    height: 170px;}
