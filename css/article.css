@@ -37,7 +37,6 @@
 /*文章*/
 .article .summary{
     font-size: 0.9em;
-
 }
 .article .no_power{
     text-align: center;
@@ -104,6 +103,14 @@
     height: 25px;
     font-size: 0.9em;
     line-height:2em;
+}
+.article li .title_mark_red{
+    display: inline-block;
+    color: orangered;
+}
+.article li .title_mark__blue{
+    display: inline-block;
+    color: dodgerblue;
 }
 .article li label{
         float: left;
