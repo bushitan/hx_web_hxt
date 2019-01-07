@@ -49,3 +49,15 @@
     width:1em;
     height: 1em;
 }
+
+
+.trade .price_image{
+    width: 650px;
+    height:230px;
+
+}
+.trade .number_image{
+    width: 750px;
+    height:230px;
+
+}
