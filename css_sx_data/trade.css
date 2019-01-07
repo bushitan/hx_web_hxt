@@ -1,0 +1,51 @@
+/*交易模块*/
+.trade{
+     margin-top:20px;
+}
+
+.trade .title{
+    padding: 3px 15px 0;
+    font-size: 0.5em;
+    text-align: center;
+    line-height: 25px;
+    color: #4b4b4b;
+    background-color: #cfd1d8;
+    /*font-weight: bolder;*/
+}
+.trade  .tab_title{
+    line-height: 26px;
+    padding: 8px 15px 7px;
+    font-size: 1.2em;
+    color: #4c5e70;
+    /*text-align: center;*/
+}
+.trade  .tab_title span{
+    margin-right: 5px;
+}
+.trade  .more{
+    float:right;
+    font-size: 0.7em;
+}
+.trade  .tab_title .select{
+    font-weight: bolder;
+}
+
+
+.trade .content{
+    padding: 0 15px ;
+    font-size: 0.5em;
+    text-align: center;
+    line-height: 25px;
+    height:25px;
+    color: #636363;
+}
+
+.trade .node{
+    text-align: center;
+}
+
+.arrow_img{
+
+    width:1em;
+    height: 1em;
+}

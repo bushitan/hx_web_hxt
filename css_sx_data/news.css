@@ -1,0 +1,224 @@
+
+.news {
+    /*padding-top: 10px;*/
+    margin-top: 20px;
+}
+
+
+.news  .title{
+    line-height: 26px;
+    /* height: 26px; */
+    font-size: 1.2em;
+    color: #4c5e70;
+    padding: 0px 0px 4px;
+}
+.news  .title .select{
+    font-weight: bolder;
+}
+
+
+.news .sub_nav{
+    height: 88px;
+    /*     line-height:44px; */
+/*        border:1px #eee solid; */
+/*     border: 1 solid; */
+}
+.news .sub_nav_title{
+    text-align:center;
+    font-size:1em;
+    line-height:54px;
+/*     line-height: 88px; */
+}
+.news .sub_nav_content{
+    font-size:0.75em;
+    height:34px;
+    text-align:center;
+    
+}
+
+
+
+
+
+.news .excel .title{
+    padding: 15px 15px 0;
+    font-size: 0.8em;
+    text-align: center;
+    line-height: 25px;
+}
+
+.news .excel .content{
+    padding: 0 15px ;
+    font-size: 0.8em;
+    text-align: center;
+    line-height: 25px;
+    color: #636363;
+}
+
+
+
+
+
+
+
+
+
+.news .special{
+
+}
+.news .special .sub_title{
+    line-height: 24px;
+    font-size: 0.8em;
+}
+.news .special_title{
+    line-height: 24px;
+    font-size: 0.8em;
+    text-align: center;
+    font-weight: bolder;
+}
+.news .special_content{
+
+    max-height:60px;
+    line-height: 15px;
+    font-size: 0.75em;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:4;
+    text-align: center;
+}
+.news .special_content label{
+    margin: 0 5px;
+ color: #888888;
+}
+.news .special_content span{
+}
+
+
+
+.news .content{
+    /* width: 100%; */
+    height: 25px;
+    font-size: 0.8em;
+    line-height: 25px;
+    color: #636363 !important;
+}
+
+.news .content label{
+    float: left;
+    width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.news .content span{
+    float: right;
+}
+
+.news .t_hot .title{
+    /* height:90px; */
+    line-height: 30px;
+    padding:2px 0 12px;
+    font-weight: bolder;
+}
+.news .t_hot .title a{
+    display: block;
+}
+.news .mark{
+    color:#fff;
+    /*background-color:#f6ab00 ;*/
+    padding: 3px 5px;
+    margin: 5px;
+}
+.news .t_hot .content div{
+    width: 250px;
+    margin:0 12px;
+/*     font-size: 0.8em; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+
+
+
+
+
+.news .ad{
+    padding:15px;
+}
+
+
+.news .node {
+    letter-spacing: 0em !important;
+    height: 206px;
+}
+.news .w_1_3{
+    width:378px ;
+}
+.news .space{
+    /*width: 255px;*/
+    margin: auto;
+    padding: 10px;
+}
+
+
+/*多图+标题*/
+.news .img_grid{
+    text-align: center;
+}
+.news .img_grid img{
+    max-width: 90%;
+    width: auto;
+    height: 100%;
+}
+
+.news .img_grid .des{
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    font-size: 0.9em;
+    color: #888888;
+}
+
+/*投票*/
+.news .vote{
+    font-size: 0.8em;
+    text-align: center;
+}
+.news .vote .vote_node{
+    margin-top: 5px;
+
+}
+.news .vote .vote_process{
+    margin: 0 3px 0 15px;
+    width: 100px;
+    background-color: #888888;
+}
+.news .vote .vote_real{
+    float: right;
+    width: 80px;
+    background-color: #f6ab00;
+}
+.news .vote .vote_ratio{
+    float: left;
+
+}
+.news .vote .vote_value {
+    float: right;
+}
+.news .vote .vote_btn{
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
