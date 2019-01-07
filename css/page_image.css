@@ -1,0 +1,140 @@
+﻿
+.page_image {
+    margin-top:20px;
+    /* padding: 20px 0 0; */
+}
+.page_image .path{
+    font-size: 0.9em;
+
+}
+
+.page_image .title{
+    /*float: left;*/
+    margin-top: 20px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: #f16609;
+}
+
+.page_image .sub_title {
+    text-align: center;
+    font-size: 0.8em;
+
+}
+.page_image .sub_title span{
+    line-height: 35px;
+    /*font-size: 1em;*/
+    padding:0 5px;
+}
+.page_image .content{
+    padding-top: 15px;
+    font-size: 0.9em;
+    line-height: 2em;
+}
+
+
+
+/*文章列表查询*/
+.page_image .query {
+    margin-top: 10px ;
+    padding: 5px 0;
+}
+.page_image .query div{
+    display: inline-block;
+    font-size: 0.8em;margin: auto;
+}
+.page_image .query .button{
+    padding: 5px;
+}
+.page_image input{
+    border-radius: 8px;
+    box-shadow: inset 0 2px 5px #eee;
+    padding: 10px;
+    border: 1px solid #D4D4D4;
+    color: #333333;
+    margin-top: 5px;
+}
+.page_image input:focus{
+    border:1px solid #50afeb;
+	outline:none;
+}
+
+
+
+/*分页*/
+.page_image .paginator{
+    text-align: center;
+    margin:15px 0;
+}
+.button-success, .button-error, .button-warning, .button-secondary {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.button-success {
+    background-color: #1CB841;
+}
+.button-error {
+    background-color: #CA3C3C;
+}
+.button-warning {
+    background-color: #DF7514;
+}
+.button-secondary {
+    background-color: #42B8DD;
+}
+.button-select {
+    color: #ffffff;
+    background-color: #3c6db0;
+}
+
+.pure-paginator {
+    letter-spacing: -0.31em;
+    /* Webkit: collapse white-space between units; */
+    text-rendering: optimizespeed;
+    /* Webkit: fixes text-rendering: optimizeLegibility; */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.pure-paginator li {
+    display: inline-block;
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+    margin: 0 2px;
+}
+.pure-button-primary.pure-button-active {
+    background-color: #E6E6E6;
+    color: #666666;
+}
+
+
+.page_image select {
+    border-radius:8px;
+    box-shadow:inset 0 2px 5px #eee;
+    padding:10px;
+    border:1px solid #D4D4D4;
+    color:#333333;
+    margin-top:5px;
+}
+.page_image select:focus{
+    border:1px solid #50afeb;
+	outline:none;
+}
+
+.page_image .cover{
+    margin: auto;
+    width: 272px;
+    height:161px;
+}
+
+.page_image .des{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
