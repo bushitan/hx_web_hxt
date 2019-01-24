@@ -1,0 +1,18 @@
+﻿
+.page_error{
+    text-align:center;
+}
+.page_error .e_404{
+    font-size: 6em;
+    font-weight: bolder;
+    margin: 50px 0 25px;
+}
+.page_error .title{
+    font-size: 2em;
+    font-weight: bolder;
+    margin: 25px;
+}
+
+.page_error .des{
+    font-size: 0.8em;
+}

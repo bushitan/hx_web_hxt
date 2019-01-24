@@ -1,0 +1,44 @@
+
+
+.ad {
+    /*padding:15px;*/
+    margin-top: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.ad .content{
+    width:100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+.ad .base_1_3{
+    width:30%;
+}
+.ad .base_1_4{
+    width:22%;
+}
+
+.ad .title{
+    text-align: center;
+    font-size: 0.8em;
+    line-height: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ad .cat_title{
+    font-size: 1em;
+    font-weight: bolder;
+    text-align: left;
+    /*line-height: 26px;*/
+    height: 26px;
+
+}
+.ad img{
+    /* width:auto; */
+    /*max-width: 100%;*/
+    /* height:100%; */
+}
