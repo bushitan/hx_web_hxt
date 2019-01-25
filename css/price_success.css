@@ -1,0 +1,45 @@
+/*交易模块*/
+.price_success{
+     margin-top:20px;
+
+}
+.price_success .title{
+    color: #f6ab00;
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: center;
+}
+.price_success .cover{
+    text-align: center;
+}
+.price_success .cover img{
+    width: 200px;
+    height: 200px;
+}
+
+.price_success .des{
+    text-align: center;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+.price_success .time{
+    text-align: center;
+    color: #888;
+    font-size:0.8em;
+    margin-bottom: 10px;
+}
+
+.price_success .pay{
+    margin-top: 10px;
+    text-align: right;
+}
+.price_success .check ,.price_success .protocol ,.price_success .xx_button{
+
+    display: inline-block;
+    vertical-align: middle;
+}
+.price_success .protocol {
+    color: #f6ab00;
+    margin-right: 15px;
+    
+}

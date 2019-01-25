@@ -3,6 +3,7 @@
     margin-top:20px;
     /* padding: 20px 0 0; */
 }
+.article td{ border:1px solid #888}
 .article .path{
     font-size: 0.9em;
 

@@ -1,0 +1,190 @@
+﻿
+.chance_info {
+    margin-top:20px;
+    /* padding: 20px 0 0; */
+}
+.chance_info .path{
+    font-size: 0.9em;
+
+}
+
+
+.chance_info .content{
+    padding-top: 15px;
+    font-size: 0.9em;
+}
+
+.chance_info .title{
+    /*float: left;*/
+    line-height: 35px;
+    /*text-align: center;*/
+    font-size: 1.2em;
+    font-weight: bolder;
+    /*color: #f16609;*/
+}
+
+
+.chance_info .node{
+     margin-top: 5px;
+    padding-left:30px;
+}
+.chance_info .detail{
+     margin-top: 15px;
+    padding:0 60px;
+    padding:0 60px;
+    color: #888;
+}
+.chance_info .xx_border_gray{
+    /*margin-top: 15px;*/
+    /*padding-left:30px;*/
+    margin-top: 20px;
+    padding-top:15px;
+}
+.chance_info .node .name{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+.chance_info .node .des{
+    display: inline-block;
+
+}
+.chance_info .node span{
+    font-size: 0.6em;
+    color: #888888;
+}
+.chance_info .node label{
+    color: red;
+}
+
+
+.chance_info .node li{
+    display: inline-block;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+
+.chance_info .node ul{
+    padding-left: 60px;
+}
+.chance_info .node li{
+    line-height: 19px;
+    margin-right: 10px;
+}
+
+
+.chance_info .node .cover_img{
+    margin:8px 5px 3px 0;
+    width: 128px;
+    height: 96px;
+    vertical-align: middle;
+}
+.chance_info .node .cover_file{
+    margin-left: 105px;
+}
+
+
+.chance_info .node .textarea_name{
+    position: absolute;
+    width: 100px;
+    margin-top:5px;
+    text-align: right;
+}
+.chance_info .node .textarea_content{
+    width: 400px;
+    height: 200px;
+    margin-left: 105px;
+    /*display: inline-bloc;*/
+    /*border-radius:8px;*/
+    /*box-shadow:inset 0 2px 5px #eee;*/
+    /*padding:10px;*/
+    /*border:1px solid #D4D4D4;*/
+    /*color:#333333;*/
+    /*margin-top:5px;*/
+}
+
+.chance_info .node .qr{
+    margin:0 5px ;
+    width: 72px;
+    height: 28px;
+    display: inline-block; vertical-align: middle;
+}
+.chance_info .change_qr{
+    /* line-height: 41px; */
+}
+.chance_info .buttons{text-align:right;}
+
+
+.chance_info .summary{
+    font-size: 0.9em;
+
+}
+
+
+/***************产品详情*******************/
+
+.chance_info .info_title{
+    /*float: left;*/
+    line-height: 35px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bolder;
+    /*color: #f16609;*/
+}
+.chance_info .info_image{
+    /*width: 300px;*/
+    /*height: 200px;*/
+    margin: 10px;
+    text-align: center;
+}
+
+.chance_info .info_image img{
+    width: 300px;
+    height: 200px;
+
+}
+
+.chance_info input[type="text"],
+.chance_info input[type="password"],
+.chance_info input[type="email"] ,
+.chance_info input[type="date"] ,
+.chance_info select,
+.chance_info textarea{
+    border-radius:8px;
+    box-shadow:inset 0 2px 5px #eee;
+    padding:10px;
+    border:1px solid #D4D4D4;
+    color:#333333;
+    margin-top:5px;
+}
+.chance_info input[type="text"]:focus,
+.chance_info input[type="password"]:focus,
+.chance_info input[type="email"]:focus ,
+.chance_info input[type="date"]:focus ,
+.chance_info select:focus ,
+.chance_info textarea:focus{
+    border:1px solid #50afeb;
+	outline:none;
+}
+.chance_info input[type="button"],
+.chance_info input[type="submit"] {
+    padding:7px 15px;
+    background-color:#3c6db0;
+    text-align:center;
+    border-radius:5px;
+    overflow:hidden;
+    min-width:80px;
+    border:none;
+	color:#FFF;
+	box-shadow:1px 1px 1px rgba(75,75,75,0.3);
+}
+.chance_info input[type="button"]:hover,
+.chance_info input[type="submit"]:hover {
+    background-color:#5a88c8;
+}
+.chance_info input[type="button"]:active,
+.chance_info input[type="submit"]:active {
+    background-color:#5a88c8;
+}
