@@ -14,5 +14,18 @@
 }
 
 .page_error .des{
-    font-size: 0.8em;
+    font-size:1rem;
+    text-align: center;
+}
+.page_error table{
+    margin: auto;
+}
+.page_error td ,.page_error tr ,.page_error th {
+    border: 1px #000 solid;
+}
+.page_error tr ,.page_error th {
+   padding: 5px 10px;
+}
+.page_error td  {
+   padding: 0 10px;
 }
