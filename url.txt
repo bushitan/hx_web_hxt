@@ -13,6 +13,19 @@ https://xcx.308308.com/hx/1_songxiang_23admin_my_server.html
 https://xcx.308308.com/hx/1_songxiang_24admin_account_safe.html
 https://xcx.308308.com/hx/1_songxiang_25admin_my_map.html
 
+https://xcx.308308.com/hx/1_songxiang_38_404.html
+https://xcx.308308.com/hx/1_songxiang_39_500.html
+https://xcx.308308.com/hx/1_songxiang_40_ad.html
+https://xcx.308308.com/hx/1_songxiang_41_chance.html
+https://xcx.308308.com/hx/1_songxiang_42chance_info.html
+
+https://xcx.308308.com/hx/1_songxiang_19price_success.html
+https://xcx.308308.com/hx/1_songxiang_13article.html
+
+
+
+
+
 
 cdn:
 https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js
